@@ -1,0 +1,140 @@
+.price {
+  padding-bottom: 105px;
+  padding-top: 100px;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  height: auto;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box; 
+}
+
+.price__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  max-width: 1200px; 
+  gap: 50px;
+  position: relative;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box; 
+}
+
+.price__header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.price__header-description {
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.price__title,
+.price__special {
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: center;
+}
+
+.price__special {
+  color: rgb(247, 208, 91);
+}
+
+.price__item {
+  padding: 40px 30px;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
+  width: 100%;
+  animation-duration: 1s;
+  animation-name: fadeIn_1O1;
+  border: 1.6px solid rgb(248, 207, 90);
+}
+
+.price__item-title {
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.price__item-description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27.3px;
+  text-align: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.price__item-description::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: rgb(39, 39, 39);
+}
+
+.item__price {
+  margin-left: auto;
+  text-align: right;
+}
+
+.price__note {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.price__note-text {
+  color: rgb(5, 40, 27);
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  line-height: 27.3px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .price__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price__container {
+    grid-template-columns: 1fr;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .price__item {
+    width: 100%;
+}
