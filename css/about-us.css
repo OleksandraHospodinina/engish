@@ -1,0 +1,57 @@
+.about-us {
+    background: url(../img/about-us/background.png);
+    background-size: cover;
+    min-height: 500px;
+    max-height: 2040px;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 110px;
+    padding-top: 110px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-us__container {
+    min-width: 320px;
+    max-width: 1200px;
+    padding: 15px;
+    display: grid;
+    gap: 50px;
+    position: relative;
+  }
+
+.about-us__information {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about-us__title,
+.about-us__special {
+    color: rgb(255, 255, 255);
+    font-family: Lato, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: left;
+}
+
+.about-us__special {
+    color: rgb(247, 208, 91);
+}
+
+.about-us__description-part {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    padding: 20px 15px;
+}
