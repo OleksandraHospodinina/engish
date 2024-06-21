@@ -1,0 +1,26 @@
+
+.block .container {
+    background-color: #07281b;
+    height: 36px;
+    padding-bottom: 50px;
+
+}
+
+.block_content {
+    display: flex;
+    text-align: center;
+
+}
+
+.block__phone, .block__language{
+    color: #F7D05B;
+    font-family: 'Lato' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.content__logo {
+    width: 200px;
+}
