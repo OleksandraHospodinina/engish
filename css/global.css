@@ -13,14 +13,17 @@
   .container {
     /* Загальні властивості для контейнера */
     display: flex; /* Наприклад, контейнери будуть flex-контейнерами */
-    flex-wrap: wrap; /* Заворот рядків у flex-контейнері */
+    flex: 1 1 50%;
+    
     justify-content: space-between; /* Рівномірний розподіл елементів по ширині */
+    text-align: center;
     margin-left: 150px;
     margin-right: 150px;
 }
 
 .container__item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center; /* Center align items vertically */
 }
   

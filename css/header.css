@@ -1,79 +1,150 @@
-
+/* Основні стилі для .block */
 .block {
     background-color: #07281b;
     height: 150px;
 }
 
+/* Стилі для .block_content .container */
 .block_content .container {
     display: flex;
     text-align: center;
-
 }
 
+/* Стилі для .block__phone і .block__language */
 .block__phone, .block__language {
     color: #F7D05B;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: center; /* Center align the text */
-    padding: 0 20px; /* Equal padding of 20px on left and right */
-    margin: 20px 20px; /* Remove any default margins */
+    text-align: center;
+    padding: 0 20px;
+    margin: 20px 20px;
 }
 
+/* Загальні стилі для .content */
 .content {
     background-color: #07281b;
-}
-
-.block__links {
-    display: flex; /* Ensure links are displayed in a row */
-    gap: 10px; /* Add a gap of 10px between links */
-}
-
-.block__link {
-    color: white; /* Example link color */
-    text-decoration: none; /* Remove underline */
-}
-
-.content  {
-    background-color: #07281b;
     height: 150px;
-    
 }
 
+/* Стилі для .content__logo */
 .content__logo {
     width: 200px;
 }
 
+/* Основні стилі для .english-spirit */
 .english-spirit {
-    background: url(../img/about-us/background.png);
-    height: 700px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/about-us/background.png) center/cover no-repeat fixed;
 }
 
+/* Стилі для .english-spirit__box */
+.english-spirit__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-
+/* Стилі для .english-spirit__block */
 .english-spirit__block {
-    margin-top: 120px;
-    margin-left: 100px;
+    text-align: left;
+    padding-top: 80px;
 }
 
+/* Стилі для .english-spirit__logo */
+.english-spirit__logo {
+    text-align: center;
+}
+
+/* Стилі для .english-spirit__title */
 .english-spirit__title {
     font-family: 'Lato', sans-serif;
     font-size: 80px;
     color: #F7D05B;
-
+    margin-bottom: 30px;
 }
 
-.english-spirit__paragraph{
+/* Стилі для .english-spirit__paragraph */
+.english-spirit__paragraph {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 
-.english-spirit__logo {
-    width: 500px;
+/* Стилі для кнопок */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #F7D05B;
+    color: rgb(7, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+button:hover {
+    background-color: #9eb3007c;
+}
+
+/* Стилі для .english-spirit__logo img */
+.english-spirit__logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 768px) {
+    .english-spirit__box {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .english-spirit__block {
+        padding-top: 40px;
+    }
+
+    .english-spirit__logo {
+        text-align: center;
+    }
+
+    .english-spirit__title {
+        font-size: 60px;
+    }
+
+    .english-spirit__paragraph {
+        font-size: 18px;
+    }
+
+    .english-spirit__logo {
+        width: 300px;
+    }
+}
+
+/* Стилі для гамбургер меню */
+/* Reset стилів для body та html */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Основний контейнер */
+  .content {
+    background-color: #07281b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content__logo {
+    max-width: 150px;
+  }
+  
+  
