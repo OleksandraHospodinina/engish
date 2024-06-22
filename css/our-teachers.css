@@ -1,0 +1,127 @@
+.our-teachers {
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  height: auto;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.our-teachers__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  padding-bottom: 95px;
+  padding-top: 85px;
+}
+
+.our-teachers__header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.our-teachers__header-title,
+.our-teachers__special {
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-align: center;
+}
+
+.our-teachers__special {
+  color: rgb(247, 208, 91);
+}
+
+.our-teacher__person {
+  background-color: rgb(255, 255, 255);
+  border: 1.6px solid rgb(248, 207, 90);
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.our-teacher__name {
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27.3px;
+  text-align: left;
+  padding-top: 15px;
+  align-self: flex-start;
+}
+
+.our-teacher__position {
+  color: rgb(247, 208, 91);
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.8px;
+  text-align: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  align-self: flex-start;
+}
+
+.our-teacher__description {
+  color: rgb(39, 39, 39);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 25.6px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.our-teacher__image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.our-teacher__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .our-teachers__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .our-teacher__person:nth-child(3) {
+    width: 100%;
+    justify-items: center;
+    padding: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-teachers__container {
+    grid-template-columns: 1fr;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .our-teacher__person:nth-child(3) {
+    width: 100%;
+  }
+}
