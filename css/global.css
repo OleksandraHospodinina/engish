@@ -15,6 +15,8 @@
     display: flex; /* Наприклад, контейнери будуть flex-контейнерами */
     flex-wrap: wrap; /* Заворот рядків у flex-контейнері */
     justify-content: space-between; /* Рівномірний розподіл елементів по ширині */
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 /* Стилі для класу .container__item */
