@@ -1,0 +1,117 @@
+.choice {
+    background-color: rgb(245, 245, 245);
+    background-size: cover;
+    height: auto;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  
+  .choice__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .choice__header {
+    padding-top: 100px;
+  }
+  
+  .choice__title,
+  .choice__special {
+    color: rgb(39, 39, 39);
+    font-family: "Lato", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: center;
+  }
+  
+  .choice__special {
+    color: rgb(247, 208, 91);
+  }
+  
+  .choice__card {
+    background-color: rgb(255, 255, 255);
+    border: 1.6px solid rgb(248, 207, 90);
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px;
+    box-sizing: border-box;
+  }
+  
+  .choice__description {
+    color: rgb(39, 39, 39);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-align: left;
+  }
+  
+  .choice__image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .choice__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .choice-button__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  .choice-contact__button {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgb(240, 195, 2);
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 10px;
+    padding: 10px 15px; 
+    text-align: center; 
+  }
+  
+  .choice-contact__button a {
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-transform: none;
+  }
+  
+  @media (max-width: 768px) {
+    .choice__container {
+      grid-template-columns: 1fr; 
+      gap: 16px; 
+      padding-left: 16px; 
+      padding-right: 16px;
+    }
+  }
+  
