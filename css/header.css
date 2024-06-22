@@ -1,35 +1,29 @@
 
-<<<<<<< HEAD
-.block  {
-=======
 .block {
->>>>>>> 7ef858f515e3b9e4d12a8363d491f50d5d2ac35b
     background-color: #07281b;
+    height: 150px;
 }
 
-<<<<<<< HEAD
 .block_content .container {
     display: flex;
     text-align: center;
 
 }
 
-.block__phone, .block__language{
-=======
 .block__phone, .block__language {
->>>>>>> 7ef858f515e3b9e4d12a8363d491f50d5d2ac35b
     color: #F7D05B;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
     text-align: center; /* Center align the text */
     padding: 0 20px; /* Equal padding of 20px on left and right */
-    margin: 0 20px; /* Remove any default margins */
+    margin: 20px 20px; /* Remove any default margins */
 }
 
 .content {
     background-color: #07281b;
-   
+}
+
 .block__links {
     display: flex; /* Ensure links are displayed in a row */
     gap: 10px; /* Add a gap of 10px between links */
@@ -40,9 +34,10 @@
     text-decoration: none; /* Remove underline */
 }
 
-.content, .container  {
+.content  {
     background-color: #07281b;
     height: 150px;
+    
 }
 
 .content__logo {
@@ -58,6 +53,8 @@
     background-attachment: fixed;
     
 }
+
+
 
 .english-spirit__block {
     margin-top: 120px;
