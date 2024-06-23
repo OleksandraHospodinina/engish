@@ -96,6 +96,7 @@
     background-color: rgba(197, 191, 191, 0.843);
     border: 2px;
     box-sizing: border-box; /* Враховувати padding у визначенні ширини */
+    border-radius: 5px;
   }
 }
 
