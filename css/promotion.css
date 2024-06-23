@@ -1,3 +1,5 @@
+
+/* Promotion block */
 .promotion__description {
   display: grid;
   gap: 20px;
@@ -8,13 +10,10 @@
 
 .promotion__description-text {
   display: grid;
-  grid-template-columns: 1fr; /* Один стовпчик за замовчуванням */
   gap: 10px;
   text-align: left; /* Центрує текст по центру */
-  margin: 0 50px;
+  margin: 0;
 }
-
-
 
 .promotion__paragraph {
   text-align: start;
@@ -40,4 +39,37 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+/* Sale block*/
+
+.sale {
+  display: grid;
+  gap: 20px;
+  justify-content: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sale-header {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #F7D05B;
+  margin: 20px 0;
+}
+
+.sale-paragraph {
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  color: #272727;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.selected-word {
+  font-family: 'Lato', sans-serif;
+  font-size: 42px;
+  color: #F7D05B;
+  font-weight: 500;
 }
