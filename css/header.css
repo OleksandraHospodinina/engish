@@ -1,7 +1,7 @@
 /* Основні стилі для .block */
 .block {
     background-color: #07281b;
-    height: 150px;
+    height: 50px;
 }
 
 /* Стилі для .block_content .container */
@@ -24,12 +24,16 @@
 /* Загальні стилі для .content */
 .content {
     background-color: #07281b;
-    height: 150px;
+    height: 70px;
 }
 
 /* Стилі для .content__logo */
 .content__logo {
     width: 200px;
+}
+
+.content__item {
+    margin-right: 20px;
 }
 
 /* Основні стилі для .english-spirit */
@@ -86,6 +90,7 @@ button {
     color: rgb(7, 0, 0);
     cursor: pointer;
     border-radius: 5px;
+    margin-right: 20px;
 }
 
 button:hover {
