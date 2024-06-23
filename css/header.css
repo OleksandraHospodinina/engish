@@ -135,7 +135,9 @@
 
 }
 
-button:hover {
+.english-spirit__button2:hover,
+.english-spirit__button1:hover, 
+.content__button:hover {
     background-color: #9eb3007c;
 }
 
