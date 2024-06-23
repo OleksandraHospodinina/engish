@@ -2,13 +2,7 @@
 .block {
     background-color: #07281b;
     height: 50px;
-}
-
-
-/* Стилі для .block_content .container */
-.block_content .container {
-    display: flex;
-    text-align: center;
+    
 }
 
 /* Стилі для .block__phone і .block__language */
@@ -19,22 +13,39 @@
     font-weight: 400;
     text-align: center;
     padding: 0 20px;
-    margin: 20px 20px;
+}
+
+.icon-header__block {
+  width: 30px;
+  margin:10px;  
 }
 
 /* Загальні стилі для .content */
 .content {
     background-color: #07281b;
     height: 70px;
+    
 }
 
+.content__box {
+  margin-left: 70px;
+}
 /* Стилі для .content__logo */
 .content__logo {
     width: 200px;
+    
+}
+
+.content__links{
+  display: flex;
+  justify-content: center;
 }
 
 .content__item {
-    margin-right: 20px;
+  text-decoration: none;
+  color: #F7D05B;
+  margin-right: 20px;
+
 }
 
 /* Основні стилі для .english-spirit */
@@ -84,7 +95,7 @@
 }
 
 /* Стилі для кнопок */
-button {
+.content__button {
     padding: 10px 20px;
     border: none;
     background-color: #F7D05B;
@@ -92,14 +103,42 @@ button {
     cursor: pointer;
     border-radius: 5px;
     margin-right: 20px;
-    width: 280px;
+    width: 150px;
     height: 40px;
-    margin-bottom: 30px;
+    margin: 0 auto;
+}
+
+.english-spirit__button1 {
+  padding: 10px 20px;
+  border: none;
+  background-color: #F7D05B;
+  color: rgb(7, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.english-spirit__button2 {
+  padding: 10px 20px;
+  border: none;
+  background-color: #F7D05B;
+  color: rgb(7, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 30px;
+
 }
 
 button:hover {
     background-color: #9eb3007c;
 }
+
 
 /* Стилі для .english-spirit__logo img */
 .english-spirit__logo img {
@@ -160,7 +199,7 @@ button:hover {
     display: none;
   }
   
-  @media (max-width: 899px) {
+  @media (max-width: 992px) {
     .block, .content {
       display: none;
     }
@@ -171,7 +210,7 @@ button:hover {
       justify-content: space-between;
       padding: 10px 15px;
       background-color: #07281b;
-      max-width: 899px;
+      max-width: 992px;
     }
   
     .navbar__logo-link {
@@ -194,8 +233,9 @@ button:hover {
       flex-direction: column;
       background-color: #07281b;
       width: 100%;
+      height: 100%;
       position: absolute;
-      top: 50px;
+      top: 144px;
       left: 0;
       padding: 10px;
       text-align: center;
@@ -215,18 +255,24 @@ button:hover {
     }
   
     .navbar__menu-list {
+
       list-style: none;
       padding: 0;
       margin: 0;
     }
   
     .navbar__menu-list li {
-      margin: 5px 0;
+      margin: 35px 0;
+      
     }
   
     .navbar__menu-list a {
-      color: white;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #F7D05B;
+      font-weight: 600;
       text-decoration: none;
+      margin-bottom: 20px;
     }
   
     .navbar__menu-list a:hover {
@@ -238,7 +284,16 @@ button:hover {
       top: 10px;
       right: 15px;
       font-size: 25px;
-      color: black;
+      color: white;
       cursor: pointer;
+    }
+
+    .social-icons {
+      display: grid;
+      grid-template-columns: repeat(3, 0fr);
+      grid-template-rows: repeat(3, 100px);
+      gap: 25px;
+      justify-content: center;
+      margin-top: 30px;
     }
   }
