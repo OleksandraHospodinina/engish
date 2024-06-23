@@ -53,7 +53,7 @@
       </a>
       <div class="navbar__burger" onclick="toggleBurgerMenu()">&#9776;</div>
       <div class="navbar__menu">
-        <div class="navbar__close">&times;</div> 
+        <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div> 
   
         <ul class="navbar__menu-list">
           <li><a href="#">Про нас</a></li>
@@ -88,8 +88,21 @@
     <script>
       function toggleBurgerMenu() {
         const menu = document.querySelector(".navbar__menu");
-        menu.classList.toggle("navbar__menu--active");
+        menu.classList.toggle("navbar__menu--active"); // Додаємо або видаляємо клас .navbar__menu--active
       }
+    
+      function closeNavbarMenu() {
+        var navbarMenu = document.querySelector('.navbar__menu');
+        navbarMenu.classList.remove('navbar__menu--active'); // Видаляємо клас .navbar__menu--active
+      }
+    
+      // Додамо обробник кліків для закриття меню, якщо користувач клікає поза меню
+      document.addEventListener('click', function(event) {
+        var isClickInside = document.querySelector('.navbar').contains(event.target);
+        if (!isClickInside) {
+          closeNavbarMenu();
+        }
+      });
     </script>
   </body>
 </html>
