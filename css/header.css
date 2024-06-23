@@ -92,6 +92,9 @@ button {
     cursor: pointer;
     border-radius: 5px;
     margin-right: 20px;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 30px;
 }
 
 button:hover {
@@ -130,6 +133,11 @@ button:hover {
 
     .english-spirit__logo {
         width: 300px;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
     }
 }
 
