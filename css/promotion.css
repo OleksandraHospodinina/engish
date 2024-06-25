@@ -1,0 +1,134 @@
+/* Promotion block */
+.promotion__description {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promotion__description-text {
+  display: grid;
+  gap: 10px;
+  text-align: left; /* Центрує текст по центру */
+  margin: 0;
+}
+
+.promotion__paragraph {
+  text-align: start;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #272727;
+}
+
+.promotion__image {
+  display: flex;
+  margin: 0 auto; /* Відцентрувати зображення по горизонталі */
+  width: 100px; /* Ширина зображення (змініть за необхідністю) */
+}
+@media (min-width: 768px) {
+  .promotion__description {
+    grid-template-columns: repeat(4, 1fr); /* Чотири стовпчики на ПК */
+    text-align: left; /* Вирівнюємо текст по лівому краю */
+  }
+
+  .promotion__description-text {
+    text-align: center; /* Центруємо текст в кожному блоку */
+    align-items: center; /* Вирівнюємо по центру */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Sale block*/
+
+.sale {
+  display: grid;
+  gap: 20px;
+  justify-content: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sale-header {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #f7d05b;
+  margin: 20px 0;
+}
+
+.sale-paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  color: #272727;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.selected-word {
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  color: #f7d05b;
+  font-weight: 500;
+}
+
+/* Form */
+.form {
+  display: grid;
+  grid-template-columns: 1fr; /* Один стовпчик на мобільних пристроях */
+  gap: 30px; /* Відступ між елементами */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px; /* Додаткові відступи з боків для кращої читабельності */
+}
+
+@media (min-width: 600px) {
+  .form {
+    grid-template-columns: 1fr 1fr; /* Два стовпчики на планшетах і вище */
+  }
+
+  .form-input input,
+  .form-input button {
+    width: 100%; /* Ширина введення і кнопки займає всю ширину батьківського блоку */
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(197, 191, 191, 0.843);
+    border: 2px;
+    box-sizing: border-box; /* Враховувати padding у визначенні ширини */
+    border-radius: 5px;
+  }
+}
+
+.form-img img {
+  max-width: 100%; /* Зображення масштабується до ширини батьківського контейнера */
+  height: 100%; /* Зображення масштабується пропорційно */
+}
+
+.form-input {
+  display: grid;
+  gap: 20px; /* Зменшений відступ між елементами в формі */
+}
+
+.form-input-text {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  text-align: center; /* Центрування тексту внутрішнього блоку */
+}
+
+.form-input input,
+.form-input button {
+  width: 100%; /* Ширина введення і кнопки займає всю ширину батьківського блоку */
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(197, 191, 191, 0.843);
+  border: 2px;
+  box-sizing: border-box; /* Враховувати padding у визначенні ширини */
+}
+
+.form-input button {
+  background-color: #f7d05b;
+  color: black;
+  cursor: pointer;
+  margin-top: 20px; /* Зменшений відступ зверху на мобільних пристроях */
+}

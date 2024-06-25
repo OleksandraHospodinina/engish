@@ -1,0 +1,148 @@
+
+
+.footer__background {
+   background-color: #07281b;
+   width: 100%;
+   height: 100px;
+}
+
+.footer__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 50px); 
+    gap: 10px;
+    margin: 0 250px;
+}
+
+.footer__content {
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    color: white;
+    margin-top: 25px;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.icon-footer {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.footer__links img {
+    width: 40px;
+}
+
+.footer__paragraph {
+    font-size: 21px;
+    color: white;
+    margin-top: 25px;
+}
+
+.footer__button-call {
+    width: 280px;
+    height: 40px;
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent; 
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+    margin-top: 20px;
+
+}
+
+.footer__button-call:hover {
+    background-color: #F7D05B;
+    color: #07281b;
+    border: 2px solid #F7D05B;
+}
+
+.footer-end__background {
+    background-color: #07281b;
+}
+.footer-end {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item img {
+    width: 40px;
+}
+
+.footer-end-item{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: white;
+}
+
+.footer-paragraph {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 40px 20px;
+}
+
+@media (max-width: 768px) {
+    /* Стилі для мобільних пристроїв (ширина екрану до 768px) */
+    .footer__box {
+        grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+        grid-template-rows: repeat(6, 50px); /* Шість рядків */
+        margin: 0 10px; /* Зменшено відступи для малих екранів */
+    }
+
+    .footer__content {
+        font-size: 16px; /* Зменшено розмір шрифту для малих екранів */
+        margin-top: 10px; /* Зменшено відступи для малих екранів */
+    }
+
+    .icon-footer {
+        width: 25px; /* Зменшено розмір іконок для малих екранів */
+        margin: 0 5px; /* Зменшено відступи для малих екранів */
+    }
+
+    .footer__paragraph {
+        font-size: 16px; /* Зменшено розмір шрифту для малих екранів */
+        margin-top: 10px; /* Зменшено відступи для малих екранів */
+    }
+
+    .footer__button-call {
+        width: 150px; /* Зменшено ширину кнопки для малих екранів */
+        font-size: 12px; /* Зменшено розмір шрифту для малих екранів */
+        margin-top: 10px; /* Зменшено відступи для малих екранів */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Стилі для дуже малих мобільних пристроїв (ширина екрану до 480px) */
+    .footer__box {
+        grid-template-columns: 1fr; /* Одна колонка */
+        grid-template-rows: repeat(8, 50px); /* Вісім рядків */
+        margin: 0 5px; /* Зменшено відступи для дуже малих екранів */
+    }
+
+    .footer__content {
+        font-size: 14px; /* Ще більше зменшено розмір шрифту */
+        margin-top: 5px; /* Зменшено відступи для дуже малих екранів */
+    }
+
+    .icon-footer {
+        width: 20px; /* Зменшено ще більше розмір іконок */
+        margin: 0 3px; /* Зменшено відступи для дуже малих екранів */
+    }
+
+    .footer__paragraph {
+        font-size: 14px; /* Ще більше зменшено розмір шрифту */
+        margin-top: 5px; /* Зменшено відступи для дуже малих екранів */
+    }
+
+    .footer__button-call {
+        width: 120px; /* Ще більше зменшено ширину кнопки */
+        font-size: 10px; /* Ще більше зменшено розмір шрифту */
+        margin-top: 5px; /* Зменшено відступи для дуже малих екранів */
+    }
+}
