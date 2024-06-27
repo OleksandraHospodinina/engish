@@ -1,6 +1,5 @@
 .format-of-classes {
   padding: 100px auto;
-  background-color: #f5f5f5;
   background-size: cover;
   height: auto;
   background-position: center;
@@ -149,6 +148,10 @@
   display: none;
   background-color: #05281b;
 
+}
+
+.format__container.kids {
+  background-color: #f5f5f5;
 }
 
 .format__container.adults .format__text,
