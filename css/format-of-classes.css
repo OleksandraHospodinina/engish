@@ -11,6 +11,17 @@
   box-sizing: border-box;
 }
 
+.adults .format__text {
+  background-color: #05281b;
+  ;
+}
+
+.kids .format__text {
+  background-color: #f5f5f5
+  ;
+  ;
+}
+
 .format__container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -146,12 +157,12 @@
 }
 .format__container.adults {
   display: none;
-  background-color: #05281b;
+  background-color: white;
 
 }
 
 .format__container.kids {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .format__container.adults .format__text,
@@ -175,3 +186,22 @@
   height: 3px; 
   background-color: #ddbb55; 
 }
+
+@media (max-width: 768px) {
+  .format__container {
+    display: flex;
+    flex-direction: column; /* Зміна напрямку для мобільних пристроїв */
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .format__text {
+    order: initial; /* Зміна порядку: текст під картинкою */
+  }
+
+  .format__image {
+    order: 1; /* Зміна порядку: картинка зверху */
+  }
+}
+
