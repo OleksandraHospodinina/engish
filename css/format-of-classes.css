@@ -24,6 +24,10 @@
   margin-right: auto;
 }
 
+.format-container-wrapper {
+  background-color: white;
+}
+
 .format__header {
   background-color: white;
   text-align: center;
@@ -140,4 +144,31 @@
 .format__container.kids,
 .format__container.adults {
   display: block;
+}
+.format__container.adults {
+  display: none;
+  background-color: #05281b;
+
+}
+
+.format__container.adults .format__text,
+.format__container.adults .format__subtitle,
+.format__container.adults .format__description,
+.format__container.adults .format__points {
+  color: white;
+}
+
+.active-title {
+  position: relative;
+}
+
+.active-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 3px; 
+  background-color: #ddbb55; 
 }
