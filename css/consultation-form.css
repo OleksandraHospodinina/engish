@@ -72,3 +72,26 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  background-color: white;
+  border: 1px solid red;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: none; 
+}
+
+.error .error-message {
+  display: inline-block;
+}
+
+.error input {
+  border-color: red;
+}
+
+.success input {
+  border-color: green;
+}

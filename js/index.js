@@ -1,6 +1,8 @@
 function init() {
     import('./formats.js');
     import('./reviews.js');
+    import('./consultation-form.js');
+
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
