@@ -1,86 +1,85 @@
-
 .innovation-advantages-background {
-    background-color: #08281b;
-    width: 100%;
-    height: 100%;
-    padding: 100px 0 30px 0;
+  background-color: #08281b;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0 30px 0;
 }
 .innovation-advantages-main-text {
-    font-family: 'Lato', sans-serif;
-    font-size: 42px;
-    color: #FFFFFF ;
-    text-align: center;
-    margin-top: 50px;
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .special-text {
-    color: #F7D05B;
+  color: #f7d05b;
 }
 
 .innovation-advantages-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-  @media (max-width: 1000px) {
-    .innovation-advantages-container {
-      grid-template-columns: repeat(2, 1fr); 
-    }
+@media (max-width: 1000px) {
+  .innovation-advantages-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (max-width: 520px){
-    .innovation-advantages-container {
-        grid-template-columns: repeat(1, 1fr); 
-      }
-  }
+}
 
-  .innovation-advantages-item {
-    background-color: #0e412e;
-    margin: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+@media (max-width: 520px) {
+  .innovation-advantages-container {
+    grid-template-columns: repeat(1, 1fr);
   }
+}
 
-  .innovation-advantages-item:hover {
-    transform: translateY(-20px); 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
-  }
-  
-  .innovation-advantages-item img {
-    width: 90px;
-    margin: 20px;
-  }
+.innovation-advantages-item {
+  background-color: #0e412e;
+  margin: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 
-  .innovation-advantages-paragraph {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    font-size: 21px;
-    color: #FFFFFF;
-    margin: 20px;
-  }
+.innovation-advantages-item:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
 
-  .innovation-advantages-description {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #FFFFFF;
-    margin: 20px;
-    font-weight: 100;
-  }
+.innovation-advantages-item img {
+  width: 90px;
+  margin: 20px;
+}
 
-  .innovation-advantages-button {
-    display: block;
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: #272727;
-    margin: 0 auto;
-    width: 300px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #F7D05B;
-    transition: background-color 0.3s ease;
-  }
+.innovation-advantages-paragraph {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  color: #ffffff;
+  margin: 20px;
+}
 
-  .innovation-advantages-button:hover {
-    background-color: #e0bb4d; 
-  }
+.innovation-advantages-description {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 20px;
+  font-weight: 100;
+}
+
+.innovation-advantages-button {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #272727;
+  margin: 0 auto;
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #f7d05b;
+  transition: background-color 0.3s ease;
+}
+
+.innovation-advantages-button:hover {
+  background-color: #e0bb4d;
+}
