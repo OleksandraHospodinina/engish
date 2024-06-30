@@ -1,0 +1,114 @@
+
+.trial-lesson-background {
+    background: url(../img/about-us/background.png);
+    padding: 50px 0;
+}
+
+.trial-lesson-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.trial-lesson-item-1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.trial-lesson-item-2 {
+    max-width: 600px;
+    margin: 0 auto 0 60px;
+    padding: 20px;
+}
+
+.trial-lesson-title {
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'lato', sans-serif;
+    font-size: 33px;
+    color: #F7D05B;
+}
+
+.trial-lesson-list {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+li img {
+    width: 60px; 
+    margin-right: 10px; 
+    border-radius: 50%; 
+}
+
+.form-container {
+    background-color: #0c412e;
+    flex-basis: 48%; 
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.form-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F7D05B;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #4b6f60;
+    
+}
+
+.form-button {
+    margin-top: 20px;
+}
+
+.form-button button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #F7D05B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .trial-lesson-item,
+    .form-container {
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
+    }
+}
