@@ -47,7 +47,7 @@
 .our-teacher__person {
   background-color: rgb(255, 255, 255);
   border: 1.6px solid rgb(248, 207, 90);
-  transition-duration: 0.3s;
+  transition-duration: 0.6s;
   transition-property: all;
   transition-timing-function: ease;
   display: flex;
@@ -55,6 +55,11 @@
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.our-teacher__person:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .our-teacher__name {
