@@ -40,20 +40,13 @@ body {
 
 .reviews__slides {
   display: flex;
-  flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
-  gap: 20px;
-}
-
-.reviews__slides--single .reviews__slide {
-  flex: 1 1 100%;
-  width: 340px;
-  height: 1062.5px;
 }
 
 .reviews__slide {
+  flex: 0 0 50%;
   box-sizing: border-box;
   padding: 20px;
   background-color: #f5f5f5;
