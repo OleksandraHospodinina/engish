@@ -75,13 +75,14 @@
 
 .error-message {
   color: red;
-  font-size: 0.9em;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
   background-color: white;
   border: 1px solid red;
   padding: 5px;
   margin-top: 5px;
   border-radius: 4px;
-  display: none; 
+  display: none;
 }
 
 .error .error-message {

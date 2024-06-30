@@ -134,3 +134,27 @@
   cursor: pointer;
   margin-top: 20px;
 }
+
+.error-message {
+  color: red;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  background-color: white;
+  border: 1px solid red;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: none;
+}
+
+.error .error-message {
+  display: inline-block;
+}
+
+.error input {
+  border-color: red;
+}
+
+.success input {
+  border-color: green;
+}
