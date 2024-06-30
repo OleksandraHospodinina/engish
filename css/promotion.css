@@ -11,7 +11,8 @@
   display: grid;
   gap: 10px;
   text-align: left; /* Центрує текст по центру */
-  margin: 0;
+  margin: 20px 0;
+  transition: transform 0.3s ease-out; /* Smooth transition for the transform */
 }
 
 .promotion__paragraph {
@@ -24,8 +25,13 @@
 .promotion__image {
   display: flex;
   margin: 0 auto; /* Відцентрувати зображення по горизонталі */
-  width: 100px; /* Ширина зображення (змініть за необхідністю) */
+  width: 70px; /* Ширина зображення (змініть за необхідністю) */
 }
+
+.promotion__description-text:hover {
+  transform: translateY(-10px); /* Move the element 10px upwards on hover */
+}
+
 @media (min-width: 768px) {
   .promotion__description {
     grid-template-columns: repeat(4, 1fr); /* Чотири стовпчики на ПК */
