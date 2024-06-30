@@ -1,59 +1,59 @@
-
-
 .footer__background {
-   background-color: #07281b;
-   width: 100%;
-   height: 100px;
+    background-color: #07281b;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .footer__box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(4, 50px); 
+    grid-template-columns: 1fr;
     gap: 10px;
-    margin: 0 250px;
+    margin: 0 20px;
 }
 
 .footer__content {
     font-family: 'Lato', sans-serif;
     font-size: 21px;
     color: white;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .footer__links {
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .icon-footer {
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.footer__links img {
     width: 40px;
+    margin: 0 10px;
 }
 
 .footer__paragraph {
     font-size: 21px;
     color: white;
-    margin-top: 25px;
+    margin-top: 20px;
+}
+
+.footer__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .footer__button-call {
-    width: 280px;
+    width: 250px;
     height: 40px;
     padding: 10px 20px;
     color: white;
-    background-color: transparent; 
+    background-color: transparent;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     border: 2px solid white;
-    margin-top: 20px;
-
 }
 
 .footer__button-call:hover {
@@ -64,85 +64,56 @@
 
 .footer-end__background {
     background-color: #07281b;
+    text-align: center;
+    padding: 20px 0;
 }
+
 .footer-end {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 10px 50px;
 }
 
-.footer-item img {
-    width: 40px;
-}
-
-.footer-end-item{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+.footer-end-item {
+    text-align: center;
+    margin: 10px;
     color: white;
+}
+
+.footer-logo {
+    width: 120px;
 }
 
 .footer-paragraph {
     font-family: 'Lato', sans-serif;
     font-size: 12px;
-    margin: 40px 20px;
+    margin: 5px;
 }
 
-@media (max-width: 768px) {
-    /* Стилі для мобільних пристроїв (ширина екрану до 768px) */
+@media (min-width: 768px) {
     .footer__box {
-        grid-template-columns: repeat(2, 1fr); /* Дві колонки */
-        grid-template-rows: repeat(6, 50px); /* Шість рядків */
-        margin: 0 10px; /* Зменшено відступи для малих екранів */
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer__content {
-        font-size: 16px; /* Зменшено розмір шрифту для малих екранів */
-        margin-top: 10px; /* Зменшено відступи для малих екранів */
-    }
-
-    .icon-footer {
-        width: 25px; /* Зменшено розмір іконок для малих екранів */
-        margin: 0 5px; /* Зменшено відступи для малих екранів */
-    }
-
-    .footer__paragraph {
-        font-size: 16px; /* Зменшено розмір шрифту для малих екранів */
-        margin-top: 10px; /* Зменшено відступи для малих екранів */
-    }
-
-    .footer__button-call {
-        width: 150px; /* Зменшено ширину кнопки для малих екранів */
-        font-size: 12px; /* Зменшено розмір шрифту для малих екранів */
-        margin-top: 10px; /* Зменшено відступи для малих екранів */
-    }
+ 
 }
 
-@media (max-width: 480px) {
-    /* Стилі для дуже малих мобільних пристроїв (ширина екрану до 480px) */
+
+@media (min-width: 1024px) {
     .footer__box {
-        grid-template-columns: 1fr; /* Одна колонка */
-        grid-template-rows: repeat(8, 50px); /* Вісім рядків */
-        margin: 0 5px; /* Зменшено відступи для дуже малих екранів */
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .footer__content {
-        font-size: 14px; /* Ще більше зменшено розмір шрифту */
-        margin-top: 5px; /* Зменшено відступи для дуже малих екранів */
+}
+
+@media (max-width: 440px) {
+    .footer-end {
+        display: flex;
+        flex-direction: column;
     }
 
-    .icon-footer {
-        width: 20px; /* Зменшено ще більше розмір іконок */
-        margin: 0 3px; /* Зменшено відступи для дуже малих екранів */
-    }
-
-    .footer__paragraph {
-        font-size: 14px; /* Ще більше зменшено розмір шрифту */
-        margin-top: 5px; /* Зменшено відступи для дуже малих екранів */
-    }
-
-    .footer__button-call {
-        width: 120px; /* Ще більше зменшено ширину кнопки */
-        font-size: 10px; /* Ще більше зменшено розмір шрифту */
-        margin-top: 5px; /* Зменшено відступи для дуже малих екранів */
+    .footer-logo {
+        display: flex;
+        justify-items: center;
+        margin: 0 auto;
     }
 }
