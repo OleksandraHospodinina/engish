@@ -13,13 +13,10 @@
 
 .adults .format__text {
   background-color: #05281b;
-  ;
 }
 
 .kids .format__text {
-  background-color: #f5f5f5
-  ;
-  ;
+  background-color: #f5f5f5;
 }
 
 .format__container {
@@ -158,7 +155,6 @@
 .format__container.adults {
   display: none;
   background-color: white;
-
 }
 
 .format__container.kids {
@@ -177,31 +173,30 @@
 }
 
 .active-title::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  bottom: -5px; 
+  bottom: -5px;
   left: 0;
   width: 100%;
-  height: 3px; 
-  background-color: #ddbb55; 
+  height: 3px;
+  background-color: #ddbb55;
 }
 
 @media (max-width: 768px) {
   .format__container {
     display: flex;
-    flex-direction: column; /* Зміна напрямку для мобільних пристроїв */
+    flex-direction: column;
     gap: 16px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   .format__text {
-    order: initial; /* Зміна порядку: текст під картинкою */
+    order: initial;
   }
 
   .format__image {
-    order: 1; /* Зміна порядку: картинка зверху */
+    order: 1;
   }
 }
-

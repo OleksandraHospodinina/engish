@@ -1,117 +1,104 @@
-/* Основні стилі для .block */
 .block {
-    background-color: #07281b;
-    height: 50px;
-    
+  background-color: #07281b;
+  height: 50px;
 }
 
-/* Стилі для .block__phone і .block__language */
-.block__phone, .block__language {
-    color: #F7D05B;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    padding: 0 20px;
+.block__phone,
+.block__language {
+  color: #f7d05b;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .icon-header__block {
   width: 30px;
-  margin:10px;  
+  margin: 10px;
 }
 
-/* Загальні стилі для .content */
 .content {
-    background-color: #07281b;
-    height: 70px;
-    
+  background-color: #07281b;
+  height: 70px;
 }
 
 .content__box {
   margin-left: 70px;
 }
-/* Стилі для .content__logo */
+
 .content__logo {
-    width: 200px;
-    
+  width: 200px;
 }
 
-.content__links{
+.content__links {
   display: flex;
   justify-content: center;
 }
 
 .content__item {
   text-decoration: none;
-  color: #F7D05B;
+  color: #f7d05b;
   margin-right: 20px;
-
 }
 
-/* Основні стилі для .english-spirit */
 .english-spirit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url(../img/about-us/background.png) center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../img/about-us/background.png) center/cover no-repeat fixed;
 }
 
-/* Стилі для .english-spirit__box */
 .english-spirit__box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    padding: 20px;
-    box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Стилі для .english-spirit__block */
 .english-spirit__block {
-    text-align: left;
-    padding-top: 80px;
+  text-align: left;
+  padding-top: 80px;
 }
 
-/* Стилі для .english-spirit__logo */
 .english-spirit__logo {
-    text-align: center;
+  text-align: center;
 }
 
-/* Стилі для .english-spirit__title */
 .english-spirit__title {
-    font-family: 'Lato', sans-serif;
-    font-size: 80px;
-    color: #F7D05B;
-    margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 80px;
+  color: #f7d05b;
+  margin-bottom: 30px;
 }
 
-/* Стилі для .english-spirit__paragraph */
 .english-spirit__paragraph {
-    font-family: 'Lato', sans-serif;
-    font-size: 22px;
-    color: #ffffff;
-    margin-bottom: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
-/* Стилі для кнопок */
 .content__button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #F7D05B;
-    color: rgb(7, 0, 0);
-    cursor: pointer;
-    border-radius: 5px;
-    margin-right: 20px;
-    width: 150px;
-    height: 40px;
-    margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f7d05b;
+  color: rgb(7, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 .english-spirit__button1 {
   padding: 10px 20px;
   border: none;
-  background-color: #F7D05B;
+  background-color: #f7d05b;
   color: rgb(7, 0, 0);
   cursor: pointer;
   border-radius: 5px;
@@ -124,7 +111,7 @@
 .english-spirit__button2 {
   padding: 10px 20px;
   border: none;
-  background-color: #F7D05B;
+  background-color: #f7d05b;
   color: rgb(7, 0, 0);
   cursor: pointer;
   border-radius: 5px;
@@ -132,170 +119,162 @@
   width: 280px;
   height: 40px;
   margin-bottom: 30px;
-
 }
 
 .english-spirit__button2:hover,
-.english-spirit__button1:hover, 
+.english-spirit__button1:hover,
 .content__button:hover {
-    background-color: #9eb3007c;
+  background-color: #9eb3007c;
 }
 
-
-/* Стилі для .english-spirit__logo img */
 .english-spirit__logo img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Медіа-запит для мобільних пристроїв */
 @media (max-width: 768px) {
-    .english-spirit__box {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 10px;
-    }
+  .english-spirit__box {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
 
-    .english-spirit__block {
-        padding-top: 40px;
-    }
+  .english-spirit__block {
+    padding-top: 40px;
+  }
 
-    .english-spirit__logo {
-        text-align: center;
-    }
+  .english-spirit__logo {
+    text-align: center;
+  }
 
-    .english-spirit__title {
-        font-size: 60px;
-    }
+  .english-spirit__title {
+    font-size: 60px;
+  }
 
-    .english-spirit__paragraph {
-        font-size: 18px;
-    }
+  .english-spirit__paragraph {
+    font-size: 18px;
+  }
 
-    .english-spirit__logo {
-        width: 300px;
-    }
-    button {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
+  .english-spirit__logo {
+    width: 300px;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 }
 
+.content {
+  background-color: #07281b;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  
-  /* Основний контейнер */
+.content__logo {
+  max-width: 150px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .block,
   .content {
-    background-color: #07281b;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .content__logo {
-    max-width: 150px;
-  }
-  
-  .navbar {
     display: none;
   }
-  
-  @media (max-width: 992px) {
-    .block, .content {
-      display: none;
-    }
-  
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 15px;
-      background-color: #07281b;
-      max-width: 992px;
-    }
-  
-    .navbar__logo-link {
-      flex: 0 0 auto;
-    }
-  
-    .navbar__logo {
-      width: auto;
-      height: auto;
-    }
-  
-    .navbar__burger {
-      font-size: 35px;
-      color: rgba(133, 200, 17, 0.098);
-      cursor: pointer;
-    }
-  
-    .navbar__menu {
-      display: none;
-      flex-direction: column;
-      background-color: #07281b;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 144px;
-      left: 0;
-      padding: 10px;
-      text-align: center;
-    }
-  
-    .navbar__menu--active {
-      display: flex;
-    }
-  
-    .navbar__contacts {
-      margin-bottom: 10px;
-    }
-  
-    .navbar__contact-item {
-      color: white;
-      margin: 0 0 5px;
-    }
-  
-    .navbar__menu-list {
 
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .navbar__menu-list li {
-      margin: 35px 0;
-      
-    }
-  
-    .navbar__menu-list a {
-      font-family: 'Lato', sans-serif;
-      font-size: 16px;
-      color: #F7D05B;
-      font-weight: 600;
-      text-decoration: none;
-      margin-bottom: 20px;
-    }
-  
-    .navbar__menu-list a:hover {
-      text-decoration: underline;
-    }
-
-    .navbar__close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 25px;
-      color: white;
-      cursor: pointer;
-    }
-
-    .social-icons {
-      display: grid;
-      grid-template-columns: repeat(3, 0fr);
-      grid-template-rows: repeat(3, 100px);
-      gap: 25px;
-      justify-content: center;
-      margin-top: 30px;
-    }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #07281b;
+    max-width: 992px;
   }
+
+  .navbar__logo-link {
+    flex: 0 0 auto;
+  }
+
+  .navbar__logo {
+    width: auto;
+    height: auto;
+  }
+
+  .navbar__burger {
+    font-size: 35px;
+    color: rgba(133, 200, 17, 0.098);
+    cursor: pointer;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    background-color: #07281b;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 144px;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar__menu--active {
+    display: flex;
+  }
+
+  .navbar__contacts {
+    margin-bottom: 10px;
+  }
+
+  .navbar__contact-item {
+    color: white;
+    margin: 0 0 5px;
+  }
+
+  .navbar__menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar__menu-list li {
+    margin: 35px 0;
+  }
+
+  .navbar__menu-list a {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #f7d05b;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  .navbar__menu-list a:hover {
+    text-decoration: underline;
+  }
+
+  .navbar__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}

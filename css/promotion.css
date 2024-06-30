@@ -1,4 +1,3 @@
-/* Promotion block */
 .promotion__description {
   display: grid;
   gap: 20px;
@@ -10,8 +9,9 @@
 .promotion__description-text {
   display: grid;
   gap: 10px;
-  text-align: left; /* Центрує текст по центру */
-  margin: 0;
+  text-align: left;
+  margin: 20px 0;
+  transition: transform 0.3s ease-out;
 }
 
 .promotion__paragraph {
@@ -23,24 +23,27 @@
 
 .promotion__image {
   display: flex;
-  margin: 0 auto; /* Відцентрувати зображення по горизонталі */
-  width: 100px; /* Ширина зображення (змініть за необхідністю) */
+  margin: 0 auto;
+  width: 70px;
 }
+
+.promotion__description-text:hover {
+  transform: translateY(-10px);
+}
+
 @media (min-width: 768px) {
   .promotion__description {
-    grid-template-columns: repeat(4, 1fr); /* Чотири стовпчики на ПК */
-    text-align: left; /* Вирівнюємо текст по лівому краю */
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
   }
 
   .promotion__description-text {
-    text-align: center; /* Центруємо текст в кожному блоку */
-    align-items: center; /* Вирівнюємо по центру */
+    text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
   }
 }
-
-/* Sale block*/
 
 .sale {
   display: grid;
@@ -73,62 +76,61 @@
   font-weight: 500;
 }
 
-/* Form */
 .form {
   display: grid;
-  grid-template-columns: 1fr; /* Один стовпчик на мобільних пристроях */
-  gap: 30px; /* Відступ між елементами */
+  grid-template-columns: 1fr;
+  gap: 30px;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px; /* Додаткові відступи з боків для кращої читабельності */
+  padding: 0 20px;
 }
 
 @media (min-width: 600px) {
   .form {
-    grid-template-columns: 1fr 1fr; /* Два стовпчики на планшетах і вище */
+    grid-template-columns: 1fr 1fr;
   }
 
   .form-input input,
   .form-input button {
-    width: 100%; /* Ширина введення і кнопки займає всю ширину батьківського блоку */
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     background-color: rgba(197, 191, 191, 0.843);
     border: 2px;
-    box-sizing: border-box; /* Враховувати padding у визначенні ширини */
+    box-sizing: border-box;
     border-radius: 5px;
   }
 }
 
 .form-img img {
-  max-width: 100%; /* Зображення масштабується до ширини батьківського контейнера */
-  height: 100%; /* Зображення масштабується пропорційно */
+  max-width: 100%;
+  height: 100%;
 }
 
 .form-input {
   display: grid;
-  gap: 20px; /* Зменшений відступ між елементами в формі */
+  gap: 20px;
 }
 
 .form-input-text {
   font-family: "Lato", sans-serif;
   font-size: 21px;
-  text-align: center; /* Центрування тексту внутрішнього блоку */
+  text-align: center;
 }
 
 .form-input input,
 .form-input button {
-  width: 100%; /* Ширина введення і кнопки займає всю ширину батьківського блоку */
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   background-color: rgba(197, 191, 191, 0.843);
   border: 2px;
-  box-sizing: border-box; /* Враховувати padding у визначенні ширини */
+  box-sizing: border-box;
 }
 
 .form-input button {
   background-color: #f7d05b;
   color: black;
   cursor: pointer;
-  margin-top: 20px; /* Зменшений відступ зверху на мобільних пристроях */
+  margin-top: 20px;
 }

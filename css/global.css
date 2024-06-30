@@ -1,35 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  :root {
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  .container {
-    /* Загальні властивості для контейнера */
-    display: flex; /* Наприклад, контейнери будуть flex-контейнерами */
-    flex: 1 1 50%;
-    justify-content: space-between; /* Рівномірний розподіл елементів по ширині */
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+:root {
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container__item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; /* Center align items vertically */
+  align-items: center;
   margin: auto;
 }
-  
-  img {
-    width: 100%;
-    display: block;
-  }
 
-  
+img {
+  width: 100%;
+  display: block;
+}
