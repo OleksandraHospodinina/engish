@@ -5,7 +5,9 @@ function init() {
   import("./promotion.js");
   import("./trial-lesson.js");
   import("./price.js");
-  import("./promotion-sale.js")
+  import("./promotion-sale.js");
+  import("./language.js");
+  
 }
 
 const totalPartials = document.querySelectorAll(

@@ -278,3 +278,10 @@
     margin-top: 30px;
   }
 }
+
+.version__ua, .version__eng {
+  display: none;
+}
+.active {
+  display: block;
+}

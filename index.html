@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <header>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header.partial.html"
-      ></section>
-    </header>
-    <main>
-      <section
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script
+    src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/language.js"></script>
+</head>
+<body>
+  <header id="header-section" data-hx-get="index.header.partial.html" data-hx-trigger="load" data-hx-swap="outerHTML"></header>
+  <main id="main-content">
+    <div class="language-switcher">
+      <button onclick="setLanguage('ua')">UA</button>
+      <button onclick="setLanguage('eng')">ENG</button>
+    </div>
+    <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.promotion.partial.html"
@@ -76,13 +71,10 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.trial-lesson.partial.html"
       ></section>
-    </main>
-    <footer>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.footer.partial.html"
-      ></section>
-    </footer>
-  </body>
+  </main>
+  <footer id="footer-section" data-hx-get="index.footer.partial.html" data-hx-trigger="load" data-hx-swap="outerHTML"></footer>
+</body>
 </html>
+
+
+
