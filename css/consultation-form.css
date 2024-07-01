@@ -36,19 +36,19 @@
   font-weight: bold;
 }
 
-.form-group {
+.consultation__form-group {
   margin-bottom: 20px;
   text-align: left;
 }
 
-.form-group label {
+.consultation__form-group label {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="tel"] {
+.consultation__form-group input[type="text"],
+.consultation__form-group input[type="tel"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -57,11 +57,11 @@
   box-sizing: border-box;
 }
 
-.form-button {
+.consultation__form-button {
   text-align: center;
 }
 
-.form-button button {
+.consultation__form-button button {
   padding: 12px 30px;
   font-size: 18px;
   font-weight: bold;
@@ -73,7 +73,7 @@
   transition: background-color 0.3s ease;
 }
 
-.error-message {
+.consultation__error-message {
   color: red;
   font-family: "Lato", sans-serif;
   font-size: 21px;
@@ -85,14 +85,14 @@
   display: none;
 }
 
-.error .error-message {
+.consultation__error .consultation__error-message {
   display: inline-block;
 }
 
-.error input {
+.consultation__error input {
   border-color: red;
 }
 
-.success input {
+.consultation__success input {
   border-color: green;
 }

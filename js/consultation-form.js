@@ -1,71 +1,56 @@
 const form = document.querySelector(".consultation-item-2");
-const name = document.getElementById("name");
-const phoneNumber = document.getElementById("phone");
-const submitButton = form.querySelector(".form-button button");
+const nameInput = document.getElementById("consultation-name");
+const phoneInput = document.getElementById("consultation-phone");
+const submitButton = form.querySelector("button[type='submit']");
 
 function showError(input, message) {
     const formGroup = input.parentElement;
     formGroup.classList.add("error");
     formGroup.classList.remove("success");
-    const small = formGroup.querySelector(".error-message");
-    small.innerText = message;
-    small.style.display = 'inline-block';
+    const errorMessage = formGroup.querySelector(".consultation__error-message");
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'inline-block';
 }
 
 function showSuccess(input) {
     const formGroup = input.parentElement;
     formGroup.classList.remove("error");
     formGroup.classList.add("success");
-    const small = formGroup.querySelector(".error-message");
-    small.innerText = "";
-    small.style.display = 'none';
+    const errorMessage = formGroup.querySelector(".consultation__error-message");
+    errorMessage.textContent = "";
+    errorMessage.style.display = 'none';
 }
 
-function checkNameLength() {
-    const inputValue = name.value.trim();
-    if (inputValue.length < 3 || inputValue.length > 30) {
-        showError(name, "Ім'я повинно бути від 3 до 30 символів");
+function checkName() {
+    const nameValue = nameInput.value.trim();
+    if (nameValue.length < 3 || nameValue.length > 30 || !/^[a-zA-Zа-яА-ЯІіЇїЄєҐґ]+$/.test(nameValue)) {
+        showError(nameInput, "Ім'я повинно містити від 3 до 30 літер");
         return false;
     } else {
-        showSuccess(name);
+        showSuccess(nameInput);
         return true;
     }
 }
 
-function checkPhoneNumberFormat() {
-    const inputValue = phoneNumber.value.trim();
+function checkPhoneNumber() {
+    const phoneValue = phoneInput.value.trim();
     const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(inputValue)) {
-        showError(phoneNumber, "Номер телефону повинен складатися з 10 цифр");
+    if (!phoneRegex.test(phoneValue)) {
+        showError(phoneInput, "Номер телефону повинен складатися з 10 цифр");
         return false;
     } else {
-        showSuccess(phoneNumber);
+        showSuccess(phoneInput);
         return true;
     }
 }
 
-name.addEventListener("input", function () {
-    validateForm();
-});
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-phoneNumber.addEventListener("input", function () {
-    validateForm();
-});
-
-form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    if (checkNameLength() && checkPhoneNumberFormat()) {
+    if (checkName() && checkPhoneNumber()) {
         form.submit();
     }
 });
 
-function validateForm() {
-    if (checkNameLength() && checkPhoneNumberFormat()) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    }
-}
-
-validateForm();
+nameInput.addEventListener("input", checkName);
+phoneInput.addEventListener("input", checkPhoneNumber);

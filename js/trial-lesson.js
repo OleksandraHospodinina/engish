@@ -1,8 +1,7 @@
 const form = document.querySelector("form");
 const name = document.getElementById("name");
 const phone = document.getElementById("phone");
-const email = document.getElementById("email");
-const submitButton = form.querySelector(".schedule__submit");
+const submitButton = form.querySelector(".form-button button");
 
 function showError(input, message) {
     const formGroup = input.parentElement;
@@ -10,7 +9,7 @@ function showError(input, message) {
     formGroup.classList.remove("success");
     const small = formGroup.querySelector(".error-message");
     small.innerText = message;
-    small.style.display = 'inline-block';
+    small.style.display = 'inline-block'; // Відображаємо помилку
 }
 
 function showSuccess(input) {
@@ -19,7 +18,7 @@ function showSuccess(input) {
     formGroup.classList.add("success");
     const small = formGroup.querySelector(".error-message");
     small.innerText = "";
-    small.style.display = 'none';
+    small.style.display = 'none'; // Приховуємо помилку
 }
 
 function checkNameLength() {
@@ -45,18 +44,6 @@ function checkPhoneNumberFormat() {
     }
 }
 
-function checkEmailFormat() {
-    const inputValue = email.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(inputValue)) {
-        showError(email, "Некоректна електронна адреса");
-        return false;
-    } else {
-        showSuccess(email);
-        return true;
-    }
-}
-
 name.addEventListener("input", function () {
     validateForm();
 });
@@ -65,20 +52,16 @@ phone.addEventListener("input", function () {
     validateForm();
 });
 
-email.addEventListener("input", function () {
-    validateForm();
-});
-
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    if (checkNameLength() && checkPhoneNumberFormat() && checkEmailFormat()) {
+    if (checkNameLength() && checkPhoneNumberFormat()) {
         form.submit();
     }
 });
 
 function validateForm() {
-    if (checkNameLength() && checkPhoneNumberFormat() && checkEmailFormat()) {
+    if (checkNameLength() && checkPhoneNumberFormat()) {
         submitButton.disabled = false;
     } else {
         submitButton.disabled = true;
