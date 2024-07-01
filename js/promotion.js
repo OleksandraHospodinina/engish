@@ -1,73 +1,76 @@
-const form = document.querySelector("form");
-const name = document.getElementById("promotion-name");
-const phone = document.getElementById("promotion-phone");
-const email = document.getElementById("promotion-email");
-const telegram = document.getElementById("promotion-telegram");
-const submitButton = form.querySelector("button[type=submit]");
+const promotionForm = document.querySelector(".promotion__form form");
+const promotionNameInput = promotionForm.querySelector("#promotion-name");
+const promotionPhoneInput = promotionForm.querySelector("#promotion-phone");
+const promotionEmailInput = promotionForm.querySelector("#promotion-email");
+const promotionTelegramInput = promotionForm.querySelector("#promotion-telegram");
 
-function showError(input, message) {
+function promotionShowError(input, message) {
     const formGroup = input.parentElement;
-    formGroup.classList.add("error");
-    formGroup.classList.remove("success");
-    const small = formGroup.querySelector(".promotion__error-message");
-    small.innerText = message;
-    small.style.display = 'inline-block';
+    formGroup.classList.add("promotion__error");
+    formGroup.classList.remove("promotion__success");
+    const errorMessage = formGroup.querySelector(".promotion__error-message");
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'inline-block';
 }
 
-function showSuccess(input) {
+function promotionShowSuccess(input) {
     const formGroup = input.parentElement;
-    formGroup.classList.remove("error");
-    formGroup.classList.add("success");
-    const small = formGroup.querySelector(".promotion__error-message");
-    small.innerText = "";
-    small.style.display = 'none';
+    formGroup.classList.remove("promotion__error");
+    formGroup.classList.add("promotion__success");
+    const errorMessage = formGroup.querySelector(".promotion__error-message");
+    errorMessage.textContent = "";
+    errorMessage.style.display = 'none';
 }
 
-function checkName() {
-    const inputValue = name.value.trim();
-    if (inputValue === "") {
-        showError(name, "Введіть ім'я");
+function promotionCheckName() {
+    const nameValue = promotionNameInput.value.trim();
+    if (nameValue.length < 3 || nameValue.length > 30 || !/^[a-zA-Zа-яА-ЯІіЇїЄєҐґ]+$/.test(nameValue)) {
+        promotionShowError(promotionNameInput, "Ім'я повинно містити від 3 до 30 літер");
         return false;
     } else {
-        showSuccess(name);
+        promotionShowSuccess(promotionNameInput);
         return true;
     }
 }
 
-function checkPhoneNumber() {
-    const inputValue = phone.value.trim();
+function promotionCheckPhoneNumber() {
+    const phoneValue = promotionPhoneInput.value.trim();
     const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(inputValue)) {
-        showError(phone, "Номер телефону повинен складатися з 10 цифр");
+    if (!phoneRegex.test(phoneValue)) {
+        promotionShowError(promotionPhoneInput, "Номер телефону повинен складатися з 10 цифр");
         return false;
     } else {
-        showSuccess(phone);
+        promotionShowSuccess(promotionPhoneInput);
         return true;
     }
 }
 
-function checkEmail() {
-    const inputValue = email.value.trim();
+function promotionCheckEmail() {
+    const emailValue = promotionEmailInput.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(inputValue)) {
-        showError(email, "Некоректна електронна адреса");
+    if (!emailRegex.test(emailValue)) {
+        promotionShowError(promotionEmailInput, "Введіть коректну адресу електронної пошти");
         return false;
     } else {
-        showSuccess(email);
+        promotionShowSuccess(promotionEmailInput);
         return true;
     }
 }
 
-// Телеграм - необов'язкове поле, тому валідація не потрібна
+function promotionCheckTelegram() {
+    promotionShowSuccess(promotionTelegramInput);
+    return true;
+}
 
-name.addEventListener("blur", checkName);
-phone.addEventListener("blur", checkPhoneNumber);
-email.addEventListener("blur", checkEmail);
+promotionForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    if (checkName() && checkPhoneNumber() && checkEmail()) {
-        form.submit();
+    if (promotionCheckName() && promotionCheckPhoneNumber() && promotionCheckEmail() && promotionCheckTelegram()) {
+        promotionForm.submit();
     }
 });
+
+promotionNameInput.addEventListener("input", promotionCheckName);
+promotionPhoneInput.addEventListener("input", promotionCheckPhoneNumber);
+promotionEmailInput.addEventListener("input", promotionCheckEmail);
+promotionTelegramInput.addEventListener("input", promotionCheckTelegram);

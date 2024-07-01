@@ -1,82 +1,57 @@
-// Отримуємо елементи форми та кнопки відправки
-const form = document.querySelector("form");
-const nameInput = document.getElementById("trial-name");
-const phoneInput = document.getElementById("trial-phone");
-const errorMessageElements = document.querySelectorAll(".trial__error-message");
-const submitButton = document.querySelector("button[type='submit']");
+const form = document.querySelector('.trial-lesson__form-container');
+    const nameInput = document.getElementById('trial-name');
+    const phoneInput = document.getElementById('trial-phone');
+    const submitButton = form.querySelector('button[type="submit"]');
 
-// Функція показу помилки
-function showError(input, message) {
-    const formGroup = input.parentElement;
-    formGroup.classList.add("error");
-    formGroup.classList.remove("success");
-    const small = formGroup.querySelector(".trial__error-message");
-    small.innerText = message;
-    small.style.display = 'inline-block';
-}
-
-// Функція показу успіху
-function showSuccess(input) {
-    const formGroup = input.parentElement;
-    formGroup.classList.remove("error");
-    formGroup.classList.add("success");
-    const small = formGroup.querySelector(".trial__error-message");
-    small.innerText = "";
-    small.style.display = 'none';
-}
-
-// Функція перевірки ім'я
-function checkName() {
-    const nameValue = nameInput.value.trim();
-    if (nameValue === "") {
-        showError(nameInput, "Введіть ім'я");
-        return false;
-    } else {
-        showSuccess(nameInput);
-        return true;
-    }
-}
-
-// Функція перевірки номера телефону
-function checkPhone() {
-    const phoneValue = phoneInput.value.trim();
-    const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(phoneValue)) {
-        showError(phoneInput, "Номер телефону повинен містити 10 цифр");
-        return false;
-    } else {
-        showSuccess(phoneInput);
-        return true;
-    }
-}
-
-// Функція валідації форми
-function validateForm() {
-    let isValid = true;
-
-    if (!checkName()) {
-        isValid = false;
+    function showError(input, message) {
+        const formGroup = input.parentElement;
+        formGroup.classList.add('error');
+        formGroup.classList.remove('success');
+        const errorMessage = formGroup.querySelector('.trial__error-message');
+        errorMessage.textContent = message;
+        errorMessage.style.display = 'inline-block';
     }
 
-    if (!checkPhone()) {
-        isValid = false;
+    function showSuccess(input) {
+        const formGroup = input.parentElement;
+        formGroup.classList.remove('error');
+        formGroup.classList.add('success');
+        const errorMessage = formGroup.querySelector('.trial__error-message');
+        errorMessage.textContent = '';
+        errorMessage.style.display = 'none';
     }
 
-    return isValid;
-}
-
-// Обробник події відправки форми
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    if (validateForm()) {
-        form.submit();
+    function checkName() {
+        const nameValue = nameInput.value.trim();
+        if (nameValue.length < 3 || nameValue.length > 30 || !/^[a-zA-Zа-яА-ЯІіЇїЄєҐґ]+$/.test(nameValue)) {
+            showError(nameInput, "Ім'я повинно містити від 3 до 30 літер");
+            return false;
+        } else {
+            showSuccess(nameInput);
+            return true;
+        }
     }
-});
 
-// Обробники подій для перевірки полів форми під час введення
-nameInput.addEventListener("input", checkName);
-phoneInput.addEventListener("input", checkPhone);
+    function checkPhoneNumber() {
+        const phoneValue = phoneInput.value.trim();
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phoneValue)) {
+            showError(phoneInput, "Номер телефону повинен складатися з 10 цифр");
+            return false;
+        } else {
+            showSuccess(phoneInput);
+            return true;
+        }
+    }
 
-// Перевірка форми при завантаженні сторінки
-validateForm();
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        if (checkName() && checkPhoneNumber()) {
+            form.submit();
+        }
+    });
+
+    nameInput.addEventListener('input', checkName);
+    phoneInput.addEventListener('input', checkPhoneNumber);
+
