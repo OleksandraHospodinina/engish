@@ -4,6 +4,7 @@ function init() {
   import("./consultation-form.js");
   import("./promotion.js");
   import("./trial-lesson.js");
+  import("./price.js");
 }
 
 const totalPartials = document.querySelectorAll(
