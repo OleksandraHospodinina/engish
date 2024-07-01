@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="promotion__background">
+      <div class="promotion__description">
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icong-group.webp"
+            alt="icon group people"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">
+            Training formats: group and individual
+          </p>
+        </div>
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icon-book.webp"
+            alt="icon book"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">
+            Lesson programs based on Oxford and Cambridge textbooks
+          </p>
+        </div>
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icon-speak.webp"
+            alt="icon speak"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">
+            Speaking practice in Speaking Club and pronunciation training free
+            for students
+          </p>
+        </div>
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icon-rocket.webp"
+            alt="icon rocket"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">Own interactive platform</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="sale">
+        <h2 class="sale__header">SALE!</h2>
+        <p class="sale__paragraph">
+          DISCOUNT ON THE FIRST PACKAGE OF 10 AND 20 LESSONS
+          <span class="selected__word">20%</span>
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="promotion__form">
+        <div class="promotion-form__input">
+          <div class="promotion-form__img">
+            <img
+              src="/img/promotion/man-with-computer.png"
+              alt="man with notebook"
+            />
+          </div>
+        </div>
+        <div class="promotion-form__input">
+          <p class="promotion-form__input-text">
+            Fill out the form to get a 20% discount
+          </p>
+          <form action="https://formspree.io/f/xldrrvdj" method="POST">
+            <div class="promotion__form-group">
+              <label for="promotion-name">Name:</label>
+              <input
+                type="text"
+                id="promotion-name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="promotion__form-group">
+              <label for="promotion-phone">Phone:</label>
+              <input
+                type="tel"
+                id="promotion-phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="promotion__form-group">
+              <label for="promotion-email">Email:</label>
+              <input
+                type="email"
+                id="promotion-email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="promotion-telegram">Telegram (optional):</label>
+              <input
+                type="text"
+                id="text"
+                name="promotion-telegram"
+                placeholder="Telegram handle (optional)"
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="promotion__form-button">
+              <button type="submit">Get consultation</button>
+            </div>
+            <div class="promotion__countdown-container">
+              <p>Hurry! Time left until the end of the promotion:</p>
+              <div id="countdown"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/promotion.js"></script>
+    <script src="js/promotion-sale.js"></script>
+  </body>
+</html>
