@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <section class="consultation-form-background">
-    <div class="consultation-container">
-      <div class="consultation-item-1">
-        <p class="consultation-item__text">
-          ЗАПОВНІТЬ ФОРМУ, ДЛЯ КОНСУЛЬТАЦІЇ ПО ІНДИВІДУАЛЬНИМ АБО ГРУПОВИМ
-          КУРСАМ ДЛЯ ДОРОСЛИХ
-        </p>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="consultation-form-background">
+      <div class="consultation-container">
+        <div class="consultation-item-1">
+          <p class="consultation-item__text">
+            ЗАПОВНІТЬ ФОРМУ, ДЛЯ КОНСУЛЬТАЦІЇ ПО ІНДИВІДУАЛЬНИМ АБО ГРУПОВИМ
+            КУРСАМ ДЛЯ ДОРОСЛИХ
+          </p>
+        </div>
+        <form
+          class="consultation-item-2"
+          action="https://formspree.io/f/xldrrvdj"
+          method="POST"
+        >
+          <div class="consultation__form-group">
+            <label for="consultation-name"></label>
+            <input
+              type="text"
+              id="consultation-name"
+              name="name"
+              placeholder="Введіть ім'я"
+              required
+            />
+            <small class="consultation__error-message"></small>
+          </div>
+          <div class="consultation__form-group">
+            <label for="consultation-phone"></label>
+            <input
+              type="tel"
+              id="consultation-phone"
+              name="phone"
+              placeholder="Введіть номер телефону"
+              required
+            />
+            <small class="consultation__error-message"></small>
+          </div>
+          <div class="consultation__form-button">
+            <button type="submit">Отримати консультацію</button>
+          </div>
+        </form>
       </div>
-      <form class="consultation-item-2" action="https://formspree.io/f/xldrrvdj" method="POST">
-        <div class="consultation__form-group">
-          <label for="consultation-name"></label>
-          <input type="text" id="consultation-name" name="name" placeholder="Введіть ім'я" required />
-          <small class="consultation__error-message"></small>
-        </div>
-        <div class="consultation__form-group">
-          <label for="consultation-phone"></label>
-          <input type="tel" id="consultation-phone" name="phone" placeholder="Введіть номер телефону" required />
-          <small class="consultation__error-message"></small>
-        </div>
-        <div class="consultation__form-button">
-          <button type="submit">Отримати консультацію</button>
-        </div>
-      </form>
-    </div>
-  </section>
-  <script src="js/consultation-form.js"></script>
-</body>
-
+    </section>
+    <script src="js/consultation-form.js"></script>
+  </body>
 </html>

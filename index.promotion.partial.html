@@ -1,92 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
-  <script src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <section class="promotion__background">
-    <div class="promotion__description">
-      <div class="promotion__description-text">
-        <img src="img/promotion/icong-group.webp" alt="icon group people" class="promotion__image" />
-        <p class="promotion__paragraph">
-          Формати навчання: групові та індивідуальні
-        </p>
-      </div>
-      <div class="promotion__description-text">
-        <img src="img/promotion/icon-book.webp" alt="icon book" class="promotion__image" />
-        <p class="promotion__paragraph">
-          Програми уроків розроблені на основі підручників Oxford та Cambridge
-        </p>
-      </div>
-      <div class="promotion__description-text">
-        <img src="img/promotion/icon-speak.webp" alt="icon speak" class="promotion__image" />
-        <p class="promotion__paragraph">
-          Розмовна практика в Speaking Club та тренування вимови безкоштовно
-          для учнів
-        </p>
-      </div>
-      <div class="promotion__description-text">
-        <img src="img/promotion/icon-rocket.webp" alt="icon rocket" class="promotion__image" />
-        <p class="promotion__paragraph">Власна інтерактивна платформа</p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="sale">
-      <h2 class="sale__header">АКЦІЯ!</h2>
-      <p class="sale__paragraph">
-        ЗНИЖКА НА ПЕРШИЙ ПАКЕТ З 10 ТА 20 ЗАНЯТЬ
-        <span class="selected__word">20%</span>
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="promotion__form">
-      <div class="promotion-form__input">
-        <div class="promotion-form__img">
-          <img src="/img/promotion/man-with-computer.png" alt="man with notebook" />
+  <body>
+    <section class="promotion__background">
+      <div class="promotion__description">
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icong-group.webp"
+            alt="icon group people"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">
+            Формати навчання: групові та індивідуальні
+          </p>
+        </div>
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icon-book.webp"
+            alt="icon book"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">
+            Програми уроків розроблені на основі підручників Oxford та Cambridge
+          </p>
+        </div>
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icon-speak.webp"
+            alt="icon speak"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">
+            Розмовна практика в Speaking Club та тренування вимови безкоштовно
+            для учнів
+          </p>
+        </div>
+        <div class="promotion__description-text">
+          <img
+            src="img/promotion/icon-rocket.webp"
+            alt="icon rocket"
+            class="promotion__image"
+          />
+          <p class="promotion__paragraph">Власна інтерактивна платформа</p>
         </div>
       </div>
-      <div class="promotion-form__input">
-        <p class="promotion-form__input-text">Заповніть форму щоб отримати знижку 20%</p>
-        <form action="https://formspree.io/f/xldrrvdj" method="POST">
-          <div class="promotion__form-group">
-            <label for="promotion-name"></label>
-            <input type="text" id="promotion-name" name="name" placeholder="Введіть ім'я" required />
-            <small class="promotion__error-message"></small>
-          </div>
-          <div class="promotion__form-group">
-            <label for="promotion-phone"></label>
-            <input type="tel" id="promotion-phone" name="phone" placeholder="Введіть номер телефону" required />
-            <small class="promotion__error-message"></small>
-          </div>
-          <div class="promotion__form-group">
-            <label for="promotion-email"></label>
-            <input type="email" id="promotion-email" name="email" placeholder="Ваша пошта" required />
-            <small class="promotion__error-message"></small>
-          </div>
-          <div class="form-group">
-            <label for="promotion-telegram"></label>
-            <input type="text" id="text" name="promotion-telegram" placeholder="Телеграм (необов'язково)" />
-            <small class="promotion__error-message"></small>
-          </div>
-          <div class="promotion__form-button">
-            <button type="submit">Отримати консультацію</button>
-          </div>
-        </form>
+    </section>
+    <section>
+      <div class="sale">
+        <h2 class="sale__header">АКЦІЯ!</h2>
+        <p class="sale__paragraph">
+          ЗНИЖКА НА ПЕРШИЙ ПАКЕТ З 10 ТА 20 ЗАНЯТЬ
+          <span class="selected__word">20%</span>
+        </p>
       </div>
-    </div>
-  </section>
-  <script src="js/promotion.js"></script>
-</body>
-
+    </section>
+    <section>
+      <div class="promotion__form">
+        <div class="promotion-form__input">
+          <div class="promotion-form__img">
+            <img
+              src="/img/promotion/man-with-computer.png"
+              alt="man with notebook"
+            />
+          </div>
+        </div>
+        <div class="promotion-form__input">
+          <p class="promotion-form__input-text">
+            Заповніть форму щоб отримати знижку 20%
+          </p>
+          <form action="https://formspree.io/f/xldrrvdj" method="POST">
+            <div class="promotion__form-group">
+              <label for="promotion-name"></label>
+              <input
+                type="text"
+                id="promotion-name"
+                name="name"
+                placeholder="Введіть ім'я"
+                required
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="promotion__form-group">
+              <label for="promotion-phone"></label>
+              <input
+                type="tel"
+                id="promotion-phone"
+                name="phone"
+                placeholder="Введіть номер телефону"
+                required
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="promotion__form-group">
+              <label for="promotion-email"></label>
+              <input
+                type="email"
+                id="promotion-email"
+                name="email"
+                placeholder="Ваша пошта"
+                required
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="promotion-telegram"></label>
+              <input
+                type="text"
+                id="text"
+                name="promotion-telegram"
+                placeholder="Телеграм (необов'язково)"
+              />
+              <small class="promotion__error-message"></small>
+            </div>
+            <div class="promotion__form-button">
+              <button type="submit">Отримати консультацію</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/promotion.js"></script>
+  </body>
 </html>

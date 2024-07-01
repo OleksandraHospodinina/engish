@@ -7,7 +7,7 @@ const adultsSection = document.querySelector(".format__container.adults");
 kidsTitle.addEventListener("click", function () {
   kidsSection.style.display = "block";
   adultsSection.style.display = "none";
-  
+
   kidsTitle.classList.add("active-title");
   adultsTitle.classList.remove("active-title");
 });
@@ -15,7 +15,7 @@ kidsTitle.addEventListener("click", function () {
 adultsTitle.addEventListener("click", function () {
   kidsSection.style.display = "none";
   adultsSection.style.display = "block";
-  
+
   adultsTitle.classList.add("active-title");
   kidsTitle.classList.remove("active-title");
 });
@@ -23,3 +23,5 @@ adultsTitle.addEventListener("click", function () {
 kidsSection.style.display = "block";
 adultsSection.style.display = "none";
 kidsTitle.classList.add("active-title");
+
+

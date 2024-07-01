@@ -1,73 +1,68 @@
-const form = document.querySelector(".trial-lesson__form-container form");
-const nameInput = document.getElementById("trial-name");
-const phoneInput = document.getElementById("trial-phone");
-const errorMessageElements = document.querySelectorAll(".trial__error-message");
-const submitButton = document.querySelector("button[type='submit']");
+const consultationForm = document.querySelector(".consultation-item-2");
+const consultationNameInput =
+  consultationForm.querySelector("#consultation-name");
+const consultationPhoneInput = consultationForm.querySelector(
+  "#consultation-phone"
+);
 
-function showError(input, message) {
-    const formGroup = input.parentElement;
-    formGroup.classList.add("error");
-    formGroup.classList.remove("success");
-    const errorMessage = formGroup.querySelector(".trial__error-message");
-    errorMessage.textContent = message;
-    errorMessage.style.display = 'inline-block';
+function consultationShowError(input, message) {
+  const formGroup = input.parentElement;
+  formGroup.classList.add("consultation__error");
+  formGroup.classList.remove("consultation__success");
+  const errorMessage = formGroup.querySelector(".consultation__error-message");
+  errorMessage.textContent = message;
+  errorMessage.style.display = "inline-block";
 }
 
-function showSuccess(input) {
-    const formGroup = input.parentElement;
-    formGroup.classList.remove("error");
-    formGroup.classList.add("success");
-    const errorMessage = formGroup.querySelector(".trial__error-message");
-    errorMessage.textContent = "";
-    errorMessage.style.display = 'none';
+function consultationShowSuccess(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("consultation__error");
+  formGroup.classList.add("consultation__success");
+  const errorMessage = formGroup.querySelector(".consultation__error-message");
+  errorMessage.textContent = "";
+  errorMessage.style.display = "none";
 }
 
-function checkName() {
-    const nameValue = nameInput.value.trim();
-    if (nameValue.length < 3 || nameValue.length > 30 || !/^[a-zA-Zа-яА-ЯІіЇїЄєҐґ]+$/.test(nameValue)) {
-        showError(nameInput, "Ім'я повинно містити від 3 до 30 літер");
-        return false;
-    } else {
-        showSuccess(nameInput);
-        return true;
-    }
+function consultationCheckName() {
+  const nameValue = consultationNameInput.value.trim();
+  if (
+    nameValue.length < 3 ||
+    nameValue.length > 30 ||
+    !/^[a-zA-Zа-яА-ЯІіЇїЄєҐґ]+$/.test(nameValue)
+  ) {
+    consultationShowError(
+      consultationNameInput,
+      "Ім'я повинно містити від 3 до 30 літер"
+    );
+    return false;
+  } else {
+    consultationShowSuccess(consultationNameInput);
+    return true;
+  }
 }
 
-function checkPhoneNumber() {
-    const phoneValue = phoneInput.value.trim();
-    const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(phoneValue)) {
-        showError(phoneInput, "Номер телефону повинен складатися з 10 цифр");
-        return false;
-    } else {
-        showSuccess(phoneInput);
-        return true;
-    }
+function consultationCheckPhoneNumber() {
+  const phoneValue = consultationPhoneInput.value.trim();
+  const phoneRegex = /^\d{10}$/;
+  if (!phoneRegex.test(phoneValue)) {
+    consultationShowError(
+      consultationPhoneInput,
+      "Номер телефону повинен складатися з 10 цифр"
+    );
+    return false;
+  } else {
+    consultationShowSuccess(consultationPhoneInput);
+    return true;
+  }
 }
 
-function validateForm() {
-    let isValid = true;
+consultationForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    if (!checkName()) {
-        isValid = false;
-    }
-
-    if (!checkPhoneNumber()) {
-        isValid = false;
-    }
-
-    return isValid;
-}
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    if (validateForm()) {
-        form.submit();
-    }
+  if (consultationCheckName() && consultationCheckPhoneNumber()) {
+    consultationForm.submit();
+  }
 });
 
-nameInput.addEventListener("input", checkName);
-phoneInput.addEventListener("input", checkPhoneNumber);
-
-validateForm();
+consultationNameInput.addEventListener("input", consultationCheckName);
+consultationPhoneInput.addEventListener("input", consultationCheckPhoneNumber);

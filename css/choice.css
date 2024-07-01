@@ -77,36 +77,33 @@
   object-fit: cover;
 }
 
-.choice-button__container {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .choice-contact__button {
+  display: block;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background-color: rgb(240, 195, 2);
   transition: background-color 0.2s, color 0.2s;
-  margin-top: 10px;
   padding: 10px 15px;
   text-align: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
 }
 
 .choice-contact__button a {
   color: rgb(39, 39, 39);
   cursor: pointer;
-  display: inline-block;
-  font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
   text-transform: none;
+}
+.choice-contact__button:hover {
+  background-color: #e0bb4d;
 }
 
 @media (max-width: 768px) {

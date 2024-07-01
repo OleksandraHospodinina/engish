@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -69,7 +69,6 @@
         <div class="navbar__burger" onclick="toggleBurgerMenu()">&#9776;</div>
         <div class="navbar__menu">
           <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div>
-
           <ul class="navbar__menu-list">
             <li><a href="#">Про нас</a></li>
             <li><a href="#">Про програму</a></li>
@@ -82,19 +81,19 @@
                   ><img
                     src="img/header/facebook.png"
                     alt="Facebook"
-                    style="width: 50px;"
+                    style="width: 50px"
                 /></a>
                 <a href="#"
                   ><img
                     src="img/header/instagram.png"
                     alt="Instagram"
-                    style="width: 50px;"
+                    style="width: 50px"
                 /></a>
                 <a href="#"
                   ><img
                     src="img/header/tik-tok.png"
                     alt="TikTok"
-                    style="width: 50px;"
+                    style="width: 50px"
                 /></a>
               </div>
             </li>
@@ -128,12 +127,10 @@
         const menu = document.querySelector(".navbar__menu");
         menu.classList.toggle("navbar__menu--active");
       }
-
       function closeNavbarMenu() {
         var navbarMenu = document.querySelector(".navbar__menu");
         navbarMenu.classList.remove("navbar__menu--active");
       }
-
       document.addEventListener("click", function (event) {
         var isClickInside = document
           .querySelector(".navbar")
