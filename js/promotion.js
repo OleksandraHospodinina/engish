@@ -1,14 +1,15 @@
 const form = document.querySelector("form");
-const name = document.getElementById("name");
-const phone = document.getElementById("phone");
-const email = document.getElementById("email");
-const submitButton = form.querySelector(".schedule__submit");
+const name = document.getElementById("promotion-name");
+const phone = document.getElementById("promotion-phone");
+const email = document.getElementById("promotion-email");
+const telegram = document.getElementById("promotion-telegram");
+const submitButton = form.querySelector("button[type=submit]");
 
 function showError(input, message) {
     const formGroup = input.parentElement;
     formGroup.classList.add("error");
     formGroup.classList.remove("success");
-    const small = formGroup.querySelector(".error-message");
+    const small = formGroup.querySelector(".promotion__error-message");
     small.innerText = message;
     small.style.display = 'inline-block';
 }
@@ -17,15 +18,15 @@ function showSuccess(input) {
     const formGroup = input.parentElement;
     formGroup.classList.remove("error");
     formGroup.classList.add("success");
-    const small = formGroup.querySelector(".error-message");
+    const small = formGroup.querySelector(".promotion__error-message");
     small.innerText = "";
     small.style.display = 'none';
 }
 
-function checkNameLength() {
+function checkName() {
     const inputValue = name.value.trim();
-    if (inputValue.length < 3 || inputValue.length > 30) {
-        showError(name, "Ім'я повинно бути від 3 до 30 символів");
+    if (inputValue === "") {
+        showError(name, "Введіть ім'я");
         return false;
     } else {
         showSuccess(name);
@@ -33,7 +34,7 @@ function checkNameLength() {
     }
 }
 
-function checkPhoneNumberFormat() {
+function checkPhoneNumber() {
     const inputValue = phone.value.trim();
     const phoneRegex = /^\d{10}$/;
     if (!phoneRegex.test(inputValue)) {
@@ -45,7 +46,7 @@ function checkPhoneNumberFormat() {
     }
 }
 
-function checkEmailFormat() {
+function checkEmail() {
     const inputValue = email.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(inputValue)) {
@@ -57,32 +58,16 @@ function checkEmailFormat() {
     }
 }
 
-name.addEventListener("input", function () {
-    validateForm();
-});
+// Телеграм - необов'язкове поле, тому валідація не потрібна
 
-phone.addEventListener("input", function () {
-    validateForm();
-});
+name.addEventListener("blur", checkName);
+phone.addEventListener("blur", checkPhoneNumber);
+email.addEventListener("blur", checkEmail);
 
-email.addEventListener("input", function () {
-    validateForm();
-});
-
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    if (checkNameLength() && checkPhoneNumberFormat() && checkEmailFormat()) {
+    if (checkName() && checkPhoneNumber() && checkEmail()) {
         form.submit();
     }
 });
-
-function validateForm() {
-    if (checkNameLength() && checkPhoneNumberFormat() && checkEmailFormat()) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    }
-}
-
-validateForm();

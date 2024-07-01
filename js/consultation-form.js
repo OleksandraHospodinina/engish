@@ -1,13 +1,14 @@
-const form = document.querySelector(".consultation-item-2");
-const nameInput = document.getElementById("consultation-name");
-const phoneInput = document.getElementById("consultation-phone");
-const submitButton = form.querySelector("button[type='submit']");
+const form = document.querySelector(".trial-lesson__form-container form");
+const nameInput = document.getElementById("trial-name");
+const phoneInput = document.getElementById("trial-phone");
+const errorMessageElements = document.querySelectorAll(".trial__error-message");
+const submitButton = document.querySelector("button[type='submit']");
 
 function showError(input, message) {
     const formGroup = input.parentElement;
     formGroup.classList.add("error");
     formGroup.classList.remove("success");
-    const errorMessage = formGroup.querySelector(".consultation__error-message");
+    const errorMessage = formGroup.querySelector(".trial__error-message");
     errorMessage.textContent = message;
     errorMessage.style.display = 'inline-block';
 }
@@ -16,7 +17,7 @@ function showSuccess(input) {
     const formGroup = input.parentElement;
     formGroup.classList.remove("error");
     formGroup.classList.add("success");
-    const errorMessage = formGroup.querySelector(".consultation__error-message");
+    const errorMessage = formGroup.querySelector(".trial__error-message");
     errorMessage.textContent = "";
     errorMessage.style.display = 'none';
 }
@@ -44,13 +45,29 @@ function checkPhoneNumber() {
     }
 }
 
-form.addEventListener("submit", function (event) {
+function validateForm() {
+    let isValid = true;
+
+    if (!checkName()) {
+        isValid = false;
+    }
+
+    if (!checkPhoneNumber()) {
+        isValid = false;
+    }
+
+    return isValid;
+}
+
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    if (checkName() && checkPhoneNumber()) {
+    if (validateForm()) {
         form.submit();
     }
 });
 
 nameInput.addEventListener("input", checkName);
 phoneInput.addEventListener("input", checkPhoneNumber);
+
+validateForm();

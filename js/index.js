@@ -3,6 +3,7 @@ function init() {
     import('./reviews.js');
     import('./consultation-form.js');
     import('./promotion.js');
+    import('./trial-lesson.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;

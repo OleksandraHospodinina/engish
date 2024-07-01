@@ -53,7 +53,7 @@
   margin: 0 auto;
 }
 
-.sale-header {
+.sale__header {
   font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -61,7 +61,7 @@
   margin: 20px 0;
 }
 
-.sale-paragraph {
+.sale__paragraph {
   font-family: "Lato", sans-serif;
   font-size: 21px;
   color: #272727;
@@ -69,14 +69,14 @@
   font-weight: 500;
 }
 
-.selected-word {
+.selected__word {
   font-family: "Lato", sans-serif;
   font-size: 42px;
   color: #f7d05b;
   font-weight: 500;
 }
 
-.form {
+.promotion__form {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
@@ -86,12 +86,12 @@
 }
 
 @media (min-width: 600px) {
-  .form {
+  .promotion__form {
     grid-template-columns: 1fr 1fr;
   }
 
-  .form-input input,
-  .form-input button {
+  .promotion-form__input input,
+  .promotion-form__input button {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -102,24 +102,24 @@
   }
 }
 
-.form-img img {
+.form__img img {
   max-width: 100%;
   height: 100%;
 }
 
-.form-input {
+.promotion-form__input {
   display: grid;
   gap: 20px;
 }
 
-.form-input-text {
+.promotion-form__input-text {
   font-family: "Lato", sans-serif;
   font-size: 21px;
   text-align: center;
 }
 
-.form-input input,
-.form-input button {
+.promotion-form__input input,
+.promotion-form__input button {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -128,14 +128,14 @@
   box-sizing: border-box;
 }
 
-.form-input button {
+.promotion-form__input button {
   background-color: #f7d05b;
   color: black;
   cursor: pointer;
   margin-top: 20px;
 }
 
-.error-message {
+.promotion__error-message {
   color: red;
   font-family: "Lato", sans-serif;
   font-size: 21px;
@@ -147,14 +147,14 @@
   display: none;
 }
 
-.error .error-message {
+.promotion__error .promotion__error-message {
   display: inline-block;
 }
 
-.error input {
+.promotion__error input {
   border-color: red;
 }
 
-.success input {
+.promotion__success input {
   border-color: green;
 }

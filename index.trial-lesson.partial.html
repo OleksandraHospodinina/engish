@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <section class="trial-lesson-background">
-        <div class="trial-lesson-container">
-            <div class="trial-lesson-item-1">
-                <h2 class="trial-lesson-title">ПРОБНИЙ УРОК:</h2>
+    <section class="trial-lesson__background">
+        <div class="trial-lesson__container">
+            <div class="trial-lesson__item-1">
+                <h2 class="trial-lesson__title">ПРОБНИЙ УРОК:</h2>
                 <ul>
-                    <li class="trial-lesson-list">
+                    <li class="trial-lesson__list">
                         <img src="img/trial-lesson/trial-chek-list.jpg" alt="list chek">
                         <p>Презентація форматів навчання</p>
                     </li>
-                    <li class="trial-lesson-list">
+                    <li class="trial-lesson__list">
                         <img src="img/trial-lesson/trial-chek-list.jpg" alt="list chek">
                         <p>Тест рівня англійської мови</p>
                     </li>
-                    <li class="trial-lesson-list">
+                    <li class="trial-lesson__list">
                         <img src="img/trial-lesson/trial-chek-list.jpg" alt="list chek">
                         <p>Підбір програми курсу під ваші цілі</p>
-                    </li class="trial-lesson-list">
-                    <li class="trial-lesson-list">
+                    </li class="trial-lesson__list">
+                    <li class="trial-lesson__list">
                         <img src="img/trial-lesson/trial-chek-list.jpg" alt="list chek">
                         <p>Тривалість – 30 хвилин</p>
                     </li>
                 </ul>
             </div>
-            <div class="trial-lesson-item-2">
-            <div class="form-container">
-                <h2 class="form-title">Заповніть форму для консультації та запису на пробний урок</h2>
-                <form action="https://formspree.io/f/xldrrvdj" method="POST">
-                    <div class="form-group">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
-                    </div>
-                    <div class="form-button">
-                        <button type="submit">Отримати консультацію</button>
-                    </div>
-                </form>
-            </div>
+            <div class="trial-lesson__item-2">
+                <div class="trial-lesson__form-container">
+                    <h2 class="trial-lesson__form-title">Заповніть форму для консультації та запису на пробний урок</h2>
+                    <form action="https://formspree.io/f/xldrrvdj" method="POST">
+                        <div class="trial-lesson__form-group">
+                            <label for="trial-name"></label>
+                            <input type="text" id="trial-name" name="name" placeholder="Введіть ім'я" required>
+                            <small class="trial__error-message"></small>
+                        </div>
+                        <div class="trial-lesson__form-group">
+                            <label for="trial-phone"></label>
+                            <input type="tel" id="trial-phone" name="phone" placeholder="Ваш телефон" required>
+                            <small class="trial__error-message"></small>
+                        </div>
+                        <div class="trial-lesson__form-button">
+                            <button type="submit">Отримати консультацію</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+    <script src="js/trial-lesson.js"></script>
 </body>
+
 </html>

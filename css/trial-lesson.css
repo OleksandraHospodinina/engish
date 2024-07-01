@@ -1,9 +1,9 @@
-.trial-lesson-background {
+.trial-lesson__background {
   background: url(../img/about-us/background.png);
   padding: 50px 0;
 }
 
-.trial-lesson-container {
+.trial-lesson__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -13,19 +13,19 @@
   justify-content: space-between;
 }
 
-.trial-lesson-item-1 {
+.trial-lesson__item-1 {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.trial-lesson-item-2 {
+.trial-lesson__item-2 {
   max-width: 600px;
   margin: 0 auto 0 60px;
   padding: 20px;
 }
 
-.trial-lesson-title {
+.trial-lesson__title {
   text-align: start;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -34,7 +34,7 @@
   color: #f7d05b;
 }
 
-.trial-lesson-list {
+.trial-lesson__list {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -49,7 +49,7 @@ li img {
   border-radius: 50%;
 }
 
-.form-container {
+.trial-lesson__form-container {
   background-color: #0c412e;
   flex-basis: 48%;
   padding: 20px;
@@ -57,7 +57,7 @@ li img {
   box-sizing: border-box;
 }
 
-.form-title {
+.trial-lesson__form-title {
   font-family: "Lato", sans-serif;
   font-size: 21px;
   font-weight: bold;
@@ -66,13 +66,13 @@ li img {
   text-align: center;
 }
 
-.form-group {
+.trial-lesson__form-group {
   margin-bottom: 20px;
   text-align: left;
 }
 
-.form-group input[type="text"],
-.form-group input[type="tel"] {
+.trial-lesson__form-group input[type="text"],
+.trial-lesson__form-group input[type="tel"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -82,11 +82,11 @@ li img {
   background-color: #4b6f60;
 }
 
-.form-button {
+.trial-lesson__form-button {
   margin-top: 20px;
 }
 
-.form-button button {
+.trial-lesson__form-button button {
   width: 100%;
   margin-top: 20px;
   padding: 12px 30px;
@@ -101,9 +101,33 @@ li img {
 }
 
 @media (max-width: 768px) {
-  .trial-lesson-item,
-  .form-container {
+  .trial-lesson__item,
+  .trial-lesson__form-container {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
+}
+
+.trial__error-message {
+  color: red;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  background-color: white;
+  border: 1px solid red;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: none;
+}
+
+.trial__error .trial__error-message {
+  display: inline-block;
+}
+
+.trial__error input {
+  border-color: red;
+}
+
+.trial__success input {
+  border-color: green;
 }
