@@ -31,7 +31,7 @@
   margin-bottom: 20px;
   font-family: "lato", sans-serif;
   font-size: 33px;
-  color: #f7d05b;
+  color:var(--trial-lesson-title-color);
 }
 
 .trial-lesson__list {
@@ -40,7 +40,7 @@
   margin-bottom: 15px;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  color: #fff;
+  color: var(--trial-lesson-list-color);
 }
 
 li img {
@@ -50,7 +50,7 @@ li img {
 }
 
 .trial-lesson__form-container {
-  background-color: #0c412e;
+  background-color: var(--trial-lesson-form-container-background-color);
   flex-basis: 48%;
   padding: 20px 20px;
   border-radius: 8px;
@@ -62,7 +62,7 @@ li img {
   font-size: 21px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #f7d05b;
+  color: var(--trial-lesson-form-title-color);
   text-align: center;
 }
 
@@ -76,10 +76,10 @@ li img {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--trial-lesson-form-group-border-color);
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #4b6f60;
+  background-color: var(--trial-lesson-form-group-background-color);
 }
 
 .trial-lesson__form-button {
@@ -92,8 +92,8 @@ li img {
   padding: 12px 30px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
-  background-color: #f7d05b;
+  color: var(--trial-lesson-form-button-color);
+  background-color: var(--trial-lesson-form-button-background-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -118,11 +118,11 @@ li img {
 }
 
 .trial__error-message {
-  color: red;
+  color: var(--trial-error-message-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
-  background-color: white;
-  border: 1px solid red;
+  background-color: var(--trial-error-message-background-color);
+  border: 1px solid var(--trial-error-message-border-color);
   padding: 5px;
   margin-top: 5px;
   border-radius: 4px;
@@ -134,9 +134,9 @@ li img {
 }
 
 .trial__error input {
-  border-color: red;
+  border-color: var(--trial-error-message-border-color);
 }
 
 .trial__success input {
-  border-color: green;
+  border-color: var(--trial-success-color);
 }
