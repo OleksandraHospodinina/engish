@@ -1,0 +1,33 @@
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+  <script src="js/language.js"></script>
+</head>
+<body>
+  <header id="header-section" data-hx-get="index.header-eng.partial.html" data-hx-trigger="load" data-hx-swap="outerHTML"></header>
+  <main id="main-content">
+    <div class="language-switcher">
+      <button onclick="setLanguage('ua')">UA</button>
+      <button onclick="setLanguage('eng')">ENG</button>
+    </div>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.promotion-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.about-us-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.choice-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.format-of-classes-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.innovation-advantages-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.price-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.consultation-form-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.our-teachers-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.reviews-eng.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.trial-lesson-eng.partial.html"></section>
+  </main>
+  <footer id="footer-section">index.footer-eng.partial.html</footer>
+  <script src="js/language.js"></script>
+</body>
+</html>
