@@ -24,7 +24,7 @@ function updatePrices(rate = 1, currencySymbol = "$") {
 
 async function loadProducts() {
   try {
-    const response = await fetch("./api/price.json");
+    const response = await fetch("./api/price-eng.json");
     const products = await response.json();
     renderProducts(products);
   } catch (error) {
@@ -34,7 +34,7 @@ async function loadProducts() {
 
 function renderProducts(products) {
   const priceContainer = document.querySelector(".price__container");
-  priceContainer.innerHTML = "";
+  priceContainer.innerHTML = ""; 
   products.lessons.forEach((lesson) => {
     let lessonElement = document.createElement("div");
     lessonElement.classList.add("price__item");

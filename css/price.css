@@ -125,12 +125,11 @@
 
 .price__note {
   grid-column: 1 / -1;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 20 15;
 }
 
 .price__note-text {
-  color: rgb(5, 40, 27);
+  color: rgb(148, 7, 7);
   font-family: "Lato", sans-serif;
   font-size: 21px;
   line-height: 27.3px;
