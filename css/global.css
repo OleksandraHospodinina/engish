@@ -56,7 +56,15 @@
   --format-of-classes-format-title-color: rgb(39, 39, 39);
   --format-of-classes-active-title-color: #ddbb55;
   --format-of-classes-container-adult-color: white;
-
+  --innovation-advantages-main-text-color: #ffffff;
+  --innovation-advantages-item-background-color: #0e412e;
+  --innovation-advantages-item-box-shadow-color: rgba(0, 0, 0, 0.3);
+  --innovation-advantages-item-box-shadow-hover-color: rgba(0, 0, 0, 0.5);
+  --innovation-advantages-paragraph-color: #fff;
+  --innovation-advantages-description-color: #fff;
+  --innovation-advantages-button-color: #272727;
+  --innovation-advantages-button-bakcground-color: #f7d05b;
+  --innovation-advantages-button-bakcground-hover-color: #e0bb4d;
 
 
 
