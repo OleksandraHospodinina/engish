@@ -7,9 +7,11 @@
 
 .footer__box {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr auto;
+  justify-content: space-between;
   gap: 10px;
-  margin: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .footer__content {
@@ -17,17 +19,13 @@
   font-size: 21px;
   color: white;
   margin-top: 10px;
+  text-align: left;
 }
 
 .footer__links {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-}
-
-.icon-footer {
-  width: 40px;
-  margin: 0 10px;
 }
 
 .footer__paragraph {
@@ -39,7 +37,7 @@
 .footer__button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .footer__button-call {
@@ -70,18 +68,31 @@
 
 .footer-end {
   display: flex;
+  flex: 1 1 auto;
   justify-content: space-between;
-  margin: 10px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-end-item {
-  text-align: center;
-  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  text-align: right;
+  justify-content: right;
+  margin: auto 10px;
   color: white;
 }
 
+.footer-end-item-logo {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: left;
+  margin: 10px;
+  color: white;
+}
 .footer-logo {
-  width: 120px;
+  width: 180px;
 }
 
 .footer-paragraph {
@@ -114,3 +125,4 @@
     margin: 0 auto;
   }
 }
+
