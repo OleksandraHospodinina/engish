@@ -12,11 +12,11 @@
 }
 
 .adults .format__text {
-  background-color: #05281b;
+  background-color: var(--format-of-classes-format-text-adult-background-color);
 }
 
 .kids .format__text {
-  background-color: #f5f5f5;
+  background-color: var(--format-of-classes-format-text-kids-background-color);
 }
 
 .format__container {
@@ -32,17 +32,17 @@
 }
 
 .format-container-wrapper {
-  background-color: white;
+  background-color: var(-format-of-classes-container-wraper-background-color);
 }
 
 .format__header {
-  background-color: white;
+  background-color: var(--format-of-classes-format-text-kids-background-color);
   text-align: center;
 }
 
 .format__title,
 .format__special {
-  color: rgb(39, 39, 39);
+  color: var( --format-of-classes-format-special-color);
   font-family: "Lato", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -54,7 +54,7 @@
 }
 
 .format__special {
-  color: rgb(247, 208, 91);
+  color: var( --selected-word-color);
 }
 
 .titles__container {
@@ -66,7 +66,7 @@
 
 .kids__title,
 .adults__title {
-  color: rgb(39, 39, 39);
+  color: var(--format-of-classes-format-title-color);
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-size: 21px;
@@ -128,7 +128,7 @@
 .format__subtitle,
 .format__description,
 .format__points {
-  color: rgb(39, 39, 39);
+  color: var(--format-of-classes-format-title-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -170,18 +170,18 @@
 }
 .format__container.adults {
   display: none;
-  background-color: white;
+  background-color: var(--format-of-classes-format-text-kids-background-color);
 }
 
 .format__container.kids {
-  background-color: white;
+  background-color: var(--format-of-classes-container-wraper-background-color);
 }
 
 .format__container.adults .format__text,
 .format__container.adults .format__subtitle,
 .format__container.adults .format__description,
 .format__container.adults .format__points {
-  color: white;
+  color: var(--format-of-classes-container-adult-color);
 }
 
 .active-title {
@@ -196,7 +196,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #ddbb55;
+  background-color: var(--format-of-classes-active-title-color);
 }
 
 @media (max-width: 768px) {
