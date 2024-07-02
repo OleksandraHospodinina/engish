@@ -129,7 +129,7 @@
 }
 
 .promotion-form__input button {
-  background-color: var(--promotion-form-input-button-color);
+  background-color: var(--promotion-form-input-background-button-color);
   color: var(--promotion-form-input-button-color);
   cursor: pointer;
   margin-top: 20px;
