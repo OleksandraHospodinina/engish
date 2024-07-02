@@ -52,7 +52,7 @@ li img {
 .trial-lesson__form-container {
   background-color: #0c412e;
   flex-basis: 48%;
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -107,6 +107,8 @@ li img {
     margin-bottom: 20px;
   }
 }
+
+
 
 .trial__error-message {
   color: red;

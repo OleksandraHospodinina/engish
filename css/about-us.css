@@ -31,7 +31,7 @@
 
 .about-us__title,
 .about-us__special {
-  color: rgb(255, 255, 255);
+  color: var(--about-us-title-color);
   font-family: "Lato", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -40,11 +40,11 @@
 }
 
 .about-us__special {
-  color: rgb(247, 208, 91);
+  color: var(--selected-word-color);
 }
 
 .about-us__description-part {
-  color: rgb(255, 255, 255);
+  color: var(--about-us-description-part);
   display: block;
   font-family: "Lato", sans-serif;
   font-size: 16px;
