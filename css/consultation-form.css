@@ -34,7 +34,7 @@
 }
 
 .consultation-item-2 {
-  background-color: #0d412e;
+  background-color: var(--consultation-item-background-color);
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -43,7 +43,7 @@
 .consultation-item__text {
   font-family: "Lato", sans-serif;
   font-size: 33px;
-  color: #f3b703;
+  color: var(--consultation-item-text-color);
   font-weight: bold;
 }
 
@@ -63,7 +63,7 @@
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--consultation-form-group-color);
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -76,8 +76,8 @@
   padding: 12px 30px;
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
-  background-color: #f3b703;
+  color: var(--consultation-form-button-color);
+  background-color: var(--consultation-form-button-background-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -85,11 +85,11 @@
 }
 
 .consultation__error-message {
-  color: red;
+  color: var(--consultation-error-message-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
-  background-color: white;
-  border: 1px solid red;
+  background-color: var(--consultation-error-message-background-color);
+  border: 1px solid var(--consultation-error-message-border-color);
   padding: 5px;
   margin-top: 5px;
   border-radius: 4px;
@@ -101,9 +101,9 @@
 }
 
 .consultation__error input {
-  border-color: red;
+  border-color: --consultation-error-message-border-color;
 }
 
 .consultation__success input {
-  border-color: green;
+  border-color: var(--consultation-success-color);
 }

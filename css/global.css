@@ -75,8 +75,15 @@
   --price-note-text-color: rgb(148, 7, 7);
   --price-list-currency-background-color: rgb(248, 207, 90);
   --price-list-currency-color: rgb(5, 40, 27);
-
-
+  --consultation-item-background-color: #0d412e;
+  --consultation-item-text-color: #f3b703;
+  --consultation-form-group-color: #ccc; 
+  --consultation-form-button-color: #fff;
+  --consultation-form-button-background-color: #f3b703;
+  --consultation-error-message-color: red;
+  --consultation-error-message-background-color: white;
+  --consultation-error-message-border-color: red;
+  --consultation-success-color: green;
 
   --footer-background-color: #07281b;
   --footer-content-color: #FFF;
