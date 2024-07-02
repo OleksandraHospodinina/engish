@@ -8,6 +8,22 @@
 
 :root {
   scroll-behavior: smooth;
+  --header-block-color: #f7d05b;
+  --header-fa-brands-color: #f7d05b;
+  --header-background-color: #07281b;
+  --header-content-item-color: #f7d05b;
+  --header-english-spirit-title-color: #f7d05b;
+  --header-english-spirit-paragraph-color: #FFF;
+  --header-content-button-background-color: #f7d05b;
+  --header-content-button-color: rgb(7, 0, 0);
+  --header-content-button-hover-color: #9eb3007c;
+  --header-content-background-color: #07281b;
+  --header-navbar-burger-color:rgba(133, 200, 17, 0.098);
+  --hrader-navbar-contact-item-color: #FFF;
+  --header-navbar-menu-list-color: #f7d05b;
+  --header-navbar-close-color: #FFF;
+  --header-button-background-color: #04281b;
+  --header-button-color: #f7d05b;
 }
 
 .container {

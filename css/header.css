@@ -5,7 +5,7 @@
 
 .block__phone,
 .block__language {
-  color: #f7d05b;
+  color: var(--header-block-color);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -13,11 +13,11 @@
 
 .fa-brands {
   margin: 10px;
-  color: #f7d05b;
+  color: var(--header-fa-brands-color);
 }
 
 .content {
-  background-color: #07281b;
+  background-color: var(--header-background-color);
   height: 70px;
 }
 
@@ -32,7 +32,7 @@
 
 .content__item {
   text-decoration: none;
-  color: #f7d05b;
+  color: var(--header-content-item-color);
   margin-right: 20px;
 }
 
@@ -65,22 +65,22 @@
 .english-spirit__title {
   font-family: "Lato", sans-serif;
   font-size: 80px;
-  color: #f7d05b;
+  color: var(--header-english-spirit-title-color);
   margin-bottom: 30px;
 }
 
 .english-spirit__paragraph {
   font-family: "Lato", sans-serif;
   font-size: 22px;
-  color: #ffffff;
+  color: var(--header-english-spirit-paragraph-color);
   margin-bottom: 30px;
 }
 
 .content__button {
   padding: 10px 20px;
   border: none;
-  background-color: #f7d05b;
-  color: rgb(7, 0, 0);
+  background-color: var(--header-content-button-background-color);
+  color: var(--header-content-button-color);
   cursor: pointer;
   border-radius: 5px;
   margin-right: 20px;
@@ -92,8 +92,8 @@
 .english-spirit__button1 {
   padding: 10px 20px;
   border: none;
-  background-color: #f7d05b;
-  color: rgb(7, 0, 0);
+  background-color: var(--header-content-button-background-color);
+  color: var(--header-content-button-color);
   cursor: pointer;
   border-radius: 5px;
   margin-right: 20px;
@@ -105,8 +105,8 @@
 .english-spirit__button2 {
   padding: 10px 20px;
   border: none;
-  background-color: #f7d05b;
-  color: rgb(7, 0, 0);
+  background-color: var(--header-content-button-background-color);
+  color: var(--header-content-button-color);
   cursor: pointer;
   border-radius: 5px;
   margin-right: 20px;
@@ -118,7 +118,7 @@
 .english-spirit__button2:hover,
 .english-spirit__button1:hover,
 .content__button:hover {
-  background-color: #9eb3007c;
+  background-color: var(--header-content-button-hover-color);
 }
 
 .english-spirit__logo img {
@@ -160,7 +160,7 @@
 }
 
 .content {
-  background-color: #07281b;
+  background-color: var(--header-content-background-color);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -186,7 +186,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 15px;
-    background-color: #07281b;
+    background-color: var(--header-content-background-color);
     max-width: 992px;
   }
 
@@ -201,14 +201,14 @@
 
   .navbar__burger {
     font-size: 35px;
-    color: rgba(133, 200, 17, 0.098);
+    color: var(--header-navbar-burger-color);
     cursor: pointer;
   }
 
   .navbar__menu {
     display: none;
     flex-direction: column;
-    background-color: #07281b;
+    background-color: var(--header-background-color);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -227,7 +227,7 @@
   }
 
   .navbar__contact-item {
-    color: white;
+    color: var(-hrader-navbar-contact-item-color);
     margin: 0 0 5px;
   }
 
@@ -244,7 +244,7 @@
   .navbar__menu-list a {
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    color: #f7d05b;
+    color: var(--header-navbar-menu-list-color);
     font-weight: 600;
     text-decoration: none;
     margin-bottom: 20px;
@@ -259,7 +259,7 @@
     top: 10px;
     right: 15px;
     font-size: 25px;
-    color: white;
+    color: var(--header-navbar-close-color);
     cursor: pointer;
   }
 
@@ -282,15 +282,15 @@
 }
 
 .btn-ua {
-  background-color: #04281b;
-  color: #f7d05b;
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-color);
   margin-right: 10px;
   padding: 5px;
 }
 
 .btn-eng {
-  background-color: #04281b;
-  color: #f7d05b;
+  background-color: var(--header-button-background-color);
+  color: var(--header-button-color);
   margin-right: 10px;
   padding: 5px;
 }
