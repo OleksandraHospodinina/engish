@@ -113,9 +113,17 @@
 }
 
 @media (max-width: 440px) {
+  
   .footer-end {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .footer-end-item {
+      text-align: center;
+      justify-content: center;
+    }
   }
 
   .footer-logo {
@@ -123,6 +131,21 @@
     justify-items: center;
     margin: 0 auto;
   }
+}
+
+@media (max-width:520px){
+  .footer__box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    .footer__content {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  
 }
 .footer-line__background {
   background-color: var(--footer-line-background-color);
