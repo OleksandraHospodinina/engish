@@ -39,6 +39,17 @@
   --promotion-countdown-color: red;
   --about-us-title-color:rgb(255, 255, 255);
   --about-us-description-part: rgb(255, 255, 255);
+  --choise-background-color: rgb(245, 245, 245);
+  --choise-title-color: rgb(39, 39, 39);
+  --choise-special-color: rgb(247, 208, 91);
+  --choise-card-background-color: rgb(255, 255, 255);
+  --choise-card-border-color: rgb(248, 207, 90);
+  --choise-card-box-shadow-color: rgba(0, 0, 0, 0.5);
+  --choise-description-color: rgb(39, 39, 39);
+  --choise-contact-button-background-color: rgb(240, 195, 2);
+  --choise-contact-button-color: rgb(39, 39, 39);
+  --choise-contact-button-bavkground-hover-color: #e0bb4d;
+
 
   --footer-background-color: #07281b;
   --footer-content-color: #FFF;

@@ -1,5 +1,5 @@
 .choice {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--choise-background-color);
   background-size: cover;
   height: auto;
   background-position: center;
@@ -28,7 +28,7 @@
 
 .choice__title,
 .choice__special {
-  color: rgb(39, 39, 39);
+  color: var(--choise-title-color);
   font-family: "Lato", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -37,12 +37,12 @@
 }
 
 .choice__special {
-  color: rgb(247, 208, 91);
+  color: var(--choise-special-color);
 }
 
 .choice__card {
-  background-color: rgb(255, 255, 255);
-  border: 1.6px solid rgb(248, 207, 90);
+  background-color: var(--choise-card-background-color);
+  border: 1.6px solid var(--choise-card-border-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,11 +54,11 @@
 
 .choice__card:hover {
   transform: translateY(-20px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px var(--choise-card-box-shadow-color);
 }
 
 .choice__description {
-  color: rgb(39, 39, 39);
+  color: var(--choise-description-color);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 25.6px;
@@ -83,7 +83,7 @@
   border-bottom-right-radius: 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  background-color: rgb(240, 195, 2);
+  background-color: var(--choise-contact-button-color);
   transition: background-color 0.2s, color 0.2s;
   padding: 10px 15px;
   text-align: center;
@@ -94,7 +94,7 @@
 }
 
 .choice-contact__button a {
-  color: rgb(39, 39, 39);
+  color: var(--choise-contact-button-color);
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;
@@ -103,7 +103,7 @@
   text-transform: none;
 }
 .choice-contact__button:hover {
-  background-color: #e0bb4d;
+  background-color: var(--choise-contact-button-bavkground-hover-color);
 }
 
 @media (max-width: 768px) {
