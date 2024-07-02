@@ -7,7 +7,7 @@ function init() {
   import("./price.js");
   import("./promotion-sale.js");
   import("./language.js");
-  
+  import("./header-burger-menu.js");
 }
 
 const totalPartials = document.querySelectorAll(

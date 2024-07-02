@@ -21,24 +21,15 @@
       <div class="block__content container">
         <p class="block__phone container__item">+38 (097) 000-00-00</p>
         <div class="block__links container__item">
-          <a href="#"
-            ><img
-              src="img/header/facebook.png"
-              alt="Facebook"
-              class="icon-header__block"
-          /></a>
-          <a href="#"
-            ><img
-              src="img/header/instagram.png"
-              alt="Instagram"
-              class="icon-header__block"
-          /></a>
-          <a href="#"
-            ><img
-              src="img/header/tik-tok.png"
-              alt="TikTok"
-              class="icon-header__block"
-          /></a>
+          <a href="https://www.facebook.com/"
+            ><i id="facebook" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i id="instagram" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com"
+            ><i id="tiktok" class="fa-brands fa-tiktok"></i
+          ></a>
         </div>
         <div class="block__language container__item">
           <button class="btn-ua" onclick="setLanguage('ua')">UA</button>
@@ -55,7 +46,7 @@
             class="content__logo container__item"
           />
           <div class="content__links container__item">
-            <a href="#" class="content__item">Про нас</a>
+            <a id="about-us" href="#index.about-us.partial.html" class="content__item">Про нас</a>
             <a href="#" class="content__item">Про програму</a>
             <a href="#" class="content__item">Ціни</a>
             <a href="#" class="content__item">Відгуки</a>
@@ -73,31 +64,22 @@
         <div class="navbar__menu">
           <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div>
           <ul class="navbar__menu-list">
-            <li><a href="#">Про нас</a></li>
+            <li><a href="№">Про нас</a></li>
             <li><a href="#">Про програму</a></li>
             <li><a href="#">Ціни</a></li>
             <li><a href="#">Відгуки</a></li>
             <li>
               <a href="#">+38 (097) 000 00 00</a>
               <div class="social-icons">
-                <a href="#"
-                  ><img
-                    src="img/header/facebook.png"
-                    alt="Facebook"
-                    style="width: 50px"
-                /></a>
-                <a href="#"
-                  ><img
-                    src="img/header/instagram.png"
-                    alt="Instagram"
-                    style="width: 50px"
-                /></a>
-                <a href="#"
-                  ><img
-                    src="img/header/tik-tok.png"
-                    alt="TikTok"
-                    style="width: 50px"
-                /></a>
+                <a href="https://www.facebook.com/"
+                  ><i id="facebook" class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/"
+                  ><i id="instagram" class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.tiktok.com"
+                  ><i id="tiktok" class="fa-brands fa-tiktok"></i
+                ></a>
               </div>
             </li>
           </ul>
@@ -130,12 +112,14 @@
         const menu = document.querySelector(".navbar__menu");
         menu.classList.toggle("navbar__menu--active");
       }
+
       function closeNavbarMenu() {
-        var navbarMenu = document.querySelector(".navbar__menu");
+        let navbarMenu = document.querySelector(".navbar__menu");
         navbarMenu.classList.remove("navbar__menu--active");
       }
+
       document.addEventListener("click", function (event) {
-        var isClickInside = document
+        let isClickInside = document
           .querySelector(".navbar")
           .contains(event.target);
         if (!isClickInside) {

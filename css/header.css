@@ -9,22 +9,16 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
-  padding: 0 20px;
 }
 
-.icon-header__block {
-  width: 30px;
+.fa-brands {
   margin: 10px;
+  color: #f7d05b;
 }
 
 .content {
   background-color: #07281b;
   height: 70px;
-}
-
-.content__box {
-  margin-left: 70px;
 }
 
 .content__logo {
@@ -279,9 +273,24 @@
   }
 }
 
-.version__ua, .version__eng {
+.version__ua,
+.version__eng {
   display: none;
 }
 .active {
   display: block;
+}
+
+.btn-ua {
+  background-color: #04281b;
+  color: #f7d05b;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.btn-eng {
+  background-color: #04281b;
+  color: #f7d05b;
+  margin-right: 10px;
+  padding: 5px;
 }
