@@ -24,6 +24,20 @@
   --header-navbar-close-color: #FFF;
   --header-button-background-color: #04281b;
   --header-button-color: #f7d05b;
+  --footer-background-color: #07281b;
+  --footer-content-color: #FFF;
+  --footer-paragraph-color: #FFF;
+  --footer-button-call-color: #FFF;
+  --footer-button-call-border-color: #FFF;
+  --footer-button-call-background-hover-color: #f7d05b;
+  --footer-button-call-border-hover-color: #f7d05b;
+  --fotter-end-background-color:#07281b;
+  --footer-end-item-color: #FFF;
+  --footer-line-background-color: #04281b;
+  --footer-line-color: #3a5348;
+
+
+
 }
 
 .container {

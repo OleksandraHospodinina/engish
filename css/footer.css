@@ -1,5 +1,5 @@
 .footer__background {
-  background-color: #07281b;
+  background-color: var(--footer-background-color);
   width: 100%;
   padding: 20px 0;
   text-align: center;
@@ -17,7 +17,7 @@
 .footer__content {
   font-family: "Lato", sans-serif;
   font-size: 21px;
-  color: white;
+  color: var(--footer-content-color);
   margin-top: 10px;
   text-align: left;
 }
@@ -30,7 +30,7 @@
 
 .footer__paragraph {
   font-size: 21px;
-  color: white;
+  color: var(--footer-paragraph-color);
   margin-top: 20px;
 }
 
@@ -44,24 +44,24 @@
   width: 250px;
   height: 40px;
   padding: 10px 20px;
-  color: white;
+  color: var(--footer-button-call-color);
   background-color: transparent;
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  border: 2px solid white;
+  border: 2px solid var(--footer-button-call-border-color);
 }
 
 .footer__button-call:hover {
-  background-color: #f7d05b;
+  background-color: var(--footer-button-call-background-hover-color);
   color: #07281b;
-  border: 2px solid #f7d05b;
+  border: 2px solid var(--footer-button-call-border-hover-color);
 }
 
 .footer-end__background {
-  background-color: #07281b;
+  background-color: var(--fotter-end-background-color);
   text-align: center;
   padding: 20px 0;
 }
@@ -81,7 +81,7 @@
   text-align: right;
   justify-content: right;
   margin: auto 10px;
-  color: white;
+  color: var(--footer-end-item-color);
 }
 
 .footer-end-item-logo {
@@ -89,7 +89,6 @@
   flex: 1 1 auto;
   justify-content: left;
   margin: 10px;
-  color: white;
 }
 .footer-logo {
   width: 180px;
@@ -126,13 +125,13 @@
   }
 }
 .footer-line__background {
-  background-color: #04281b;
+  background-color: var(--footer-line-background-color);
 }
 .footer-line {
   color:#3a5348;
   margin: 0 auto;
   max-width: 1200px;
   height: 1px; 
-  background-color: #3a5348; 
+  background-color: var(--footer-line-color); 
   border: none; 
 }
