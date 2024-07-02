@@ -1,6 +1,6 @@
 .trial-lesson__background {
   background: url(../img/about-us/background.png);
-  padding: 50px 0;
+  padding: 50px 10px;
 }
 
 .trial-lesson__container {
@@ -20,9 +20,9 @@
 }
 
 .trial-lesson__item-2 {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+ 
 }
 
 .trial-lesson__title {
@@ -52,7 +52,7 @@ li img {
 .trial-lesson__form-container {
   background-color: #0c412e;
   flex-basis: 48%;
-  padding: 20px 0;
+  padding: 20px 20px;
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -108,7 +108,11 @@ li img {
   }
 }
 
-
+@media (max-width:400px) {
+  .trial-lesson__form-container{
+    width: 85%;
+  }
+}
 
 .trial__error-message {
   color: red;
