@@ -1,149 +1,139 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link
-    rel="shortcut icon"
-    href="https://placekitten.com/96/139"
-    type="image/x-icon"
-  />
-  <script
-    src="https://unpkg.com/htmx.org@1.9.10"
-    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-    crossorigin="anonymous"
-  ></script>
-</head>
-<body>
-  <div class="block">
-    <div class="block__content container">
-      <p class="block__phone container__item">+38 (097) 000-00-00</p>
-      <div class="block__links container__item">
-        <a href="#">
-          <img
-            src="img/header/facebook.png"
-            alt="Facebook"
-            class="icon-header__block"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="img/header/instagram.png"
-            alt="Instagram"
-            class="icon-header__block"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="img/header/tik-tok.png"
-            alt="TikTok"
-            class="icon-header__block"
-          />
-        </a>
-      </div>
-      <div class="block__language container__item">
-        <button class="btn-ua" onclick="setLanguage('ua')">UA</button>
-        <button class="btn-eng" onclick="setLanguage('eng')">ENG</button>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="content">
-      <div class="content__box container">
-        <img
-          src="/img/header/logo.svg"
-          alt="logo English sprint"
-          class="content__logo container__item"
-        />
-        <div class="content__links container__item">
-          <a href="#" class="content__item">About Us</a>
-          <a href="#" class="content__item">Program</a>
-          <a href="#" class="content__item">Prices</a>
-          <a href="#" class="content__item">Reviews</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="block">
+      <div class="block__content container">
+        <p class="block__phone container__item">+38 (097) 000-00-00</p>
+        <div class="block__links container__item">
+          <a href="https://www.facebook.com/"
+            ><i id="facebook" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i id="instagram" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com"
+            ><i id="tiktok" class="fa-brands fa-tiktok"></i
+          ></a>
         </div>
-        <div class="content__call container__item">
-          <button class="content__button">Call Me</button>
+        <div class="block__language container__item">
+          <button class="btn-ua" onclick="setLanguage('ua')">UA</button>
+          <button class="btn-eng" onclick="setLanguage('eng')">ENG</button>
         </div>
       </div>
     </div>
-    <div class="navbar">
-      <a href="index.html" class="navbar__logo-link">
-        <img class="navbar__logo" src="img/header/logo.svg" alt="Logo" />
-      </a>
-      <div class="navbar__burger" onclick="toggleBurgerMenu()">&#9776;</div>
-      <div class="navbar__menu">
-        <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div>
-        <ul class="navbar__menu-list">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Prices</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li>
-            <a href="#">+38 (097) 000 00 00</a>
-            <div class="social-icons">
-              <a href="#">
-                <img
-                  src="img/header/facebook.png"
-                  alt="Facebook"
-                  style="width: 50px"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="img/header/instagram.png"
-                  alt="Instagram"
-                  style="width: 50px"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src="img/header/tik-tok.png"
-                  alt="TikTok"
-                  style="width: 50px"
-                />
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="english-spirit">
-    <div class="english-spirit__box">
-      <div class="english-spirit__block">
-        <h2 class="english-spirit__title">English Spirit</h2>
-        <p class="english-spirit__paragraph">
-          English Classes for Adults and Children
-        </p>
-        <div>
-          <button class="english-spirit__button1">Get Consultation</button>
-          <button class="english-spirit__button2">Sign Up for a Trial Lesson</button>
+    <div>
+      <div class="content">
+        <div class="content__box container">
+          <img
+            src="/img/header/logo.svg"
+            alt="logo English sprint"
+            class="content__logo container__item"
+          />
+          <div class="content__links container__item">
+            <a href="#" class="content__item">About Us</a>
+            <a href="#" class="content__item">Program</a>
+            <a href="#" class="content__item">Prices</a>
+            <a href="#" class="content__item">Reviews</a>
+          </div>
+          <div class="content__call container__item">
+            <button class="content__button">Call Me</button>
+          </div>
         </div>
       </div>
-      <div class="english-spirit__logo">
-        <img src="img/header/logo-in-circle.svg" alt="logo in circle" />
+      <div class="navbar">
+        <a href="index.html" class="navbar__logo-link">
+          <img class="navbar__logo" src="img/header/logo.svg" alt="Logo" />
+        </a>
+        <div class="navbar__burger" onclick="toggleBurgerMenu()">&#9776;</div>
+        <div class="navbar__menu">
+          <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div>
+          <ul class="navbar__menu-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li>
+              <a href="#">+38 (097) 000 00 00</a>
+              <div class="social-icons">
+                <a href="#">
+                  <img
+                    src="img/header/facebook.png"
+                    alt="Facebook"
+                    style="width: 50px;"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="img/header/instagram.png"
+                    alt="Instagram"
+                    style="width: 50px;"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="img/header/tik-tok.png"
+                    alt="TikTok"
+                    style="width: 50px;"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <script>
-    function toggleBurgerMenu() {
-      const menu = document.querySelector(".navbar__menu");
-      menu.classList.toggle("navbar__menu--active");
-    }
-    function closeNavbarMenu() {
-      var navbarMenu = document.querySelector(".navbar__menu");
-      navbarMenu.classList.remove("navbar__menu--active");
-    }
-    document.addEventListener("click", function (event) {
-      var isClickInside = document
-        .querySelector(".navbar")
-        .contains(event.target);
-      if (!isClickInside) {
-        closeNavbarMenu();
+    <div class="english-spirit">
+      <div class="english-spirit__box">
+        <div class="english-spirit__block">
+          <h2 class="english-spirit__title">English Spirit</h2>
+          <p class="english-spirit__paragraph">
+            English Classes for Adults and Children
+          </p>
+          <div>
+            <button class="english-spirit__button1">Get Consultation</button>
+            <button class="english-spirit__button2">
+              Sign Up for a Trial Lesson
+            </button>
+          </div>
+        </div>
+        <div class="english-spirit__logo">
+          <img src="img/header/logo-in-circle.svg" alt="logo in circle" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleBurgerMenu() {
+        const menu = document.querySelector(".navbar__menu");
+        menu.classList.toggle("navbar__menu--active");
       }
-    });
-  </script>
-</body>
+      function closeNavbarMenu() {
+        var navbarMenu = document.querySelector(".navbar__menu");
+        navbarMenu.classList.remove("navbar__menu--active");
+      }
+      document.addEventListener("click", function (event) {
+        var isClickInside = document
+          .querySelector(".navbar")
+          .contains(event.target);
+        if (!isClickInside) {
+          closeNavbarMenu();
+        }
+      });
+    </script>
+  </body>
 </html>
