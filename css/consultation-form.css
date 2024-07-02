@@ -20,6 +20,10 @@
   .consultation-container {
     display: grid;
     grid-template-columns: 1fr;
+    .consultation-item__text {
+      font-size: 15px;
+      text-align: center;
+    }
   }
 }
 
