@@ -105,12 +105,15 @@ li img {
   .trial-lesson__form-container {
     flex-basis: 100%;
     margin-bottom: 20px;
+    padding: 20px;
   }
 }
 
 @media (max-width:400px) {
   .trial-lesson__form-container{
-    width: 85%;
+    justify-content: left;
+    width: 65%;
+    margin: 0 auto;
   }
 }
 

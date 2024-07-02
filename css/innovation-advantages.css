@@ -28,8 +28,12 @@
 }
 
 @media (max-width: 520px) {
+  .innovation-advantages-background {
+    height: auto;
+  }
   .innovation-advantages-container {
     grid-template-columns: repeat(1, 1fr);
+    
   }
 }
 
