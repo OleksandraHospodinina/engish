@@ -8,6 +8,7 @@
 
 :root {
   scroll-behavior: smooth;
+  --selected-word-color: #f7d05b;
   --header-block-color: #f7d05b;
   --header-fa-brands-color: #f7d05b;
   --header-background-color: #07281b;
@@ -24,6 +25,19 @@
   --header-navbar-close-color: #FFF;
   --header-button-background-color: #04281b;
   --header-button-color: #f7d05b;
+  --promotion-paragraph-color: #272727;
+  --promotion-sale-header-color: #f7d05b;
+  --promotion-form-background-color: rgba(197, 191, 191, 0.843);
+  --promotion-form-input-background-button-color: #f7d05b;
+  --promotion-form-input-button-color: #000;
+  --promotion-error-message-color: red;
+  --promotion-error-message-backgraund-color: #FFF;
+  --promotion-error-message-border-color: red;
+  --promotion-error-input-border-color: red;
+  --promotion-success-input-color: green;
+  --promotion-countdown-container-color: #05281b;
+  --promotion-countdown-color: red;
+
   --footer-background-color: #07281b;
   --footer-content-color: #FFF;
   --footer-paragraph-color: #FFF;
