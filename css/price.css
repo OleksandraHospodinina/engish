@@ -1,7 +1,7 @@
 .price {
   padding-bottom: 105px;
   padding-top: 100px;
-  background-color: rgb(245, 245, 245);
+  background-color:var(--price-background-color);
   background-size: cover;
   height: auto;
   background-position: center;
@@ -35,7 +35,7 @@
 }
 
 .price__header-description {
-  color: rgb(39, 39, 39);
+  color: var(--price-header-description-color);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -44,7 +44,7 @@
 
 .price__title,
 .price__special {
-  color: rgb(39, 39, 39);
+  color: var(--price-title-color);
   font-family: "Lato", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -53,29 +53,29 @@
 }
 
 .price__special {
-  color: rgb(247, 208, 91);
+  color: var(--selected-word-color);
 }
 
 .price__item {
   padding: 40px 30px;
   text-align: left;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--price-background-color);
   margin-top: 30px;
   width: 100%;
   animation-duration: 1s;
   animation-name: fadeIn_1O1;
   transition-duration: 0.6s;
   transition-property: all;
-  border: 1.6px solid rgb(248, 207, 90);
+  border: 1.6px solid var(--price-item-border-color);
 }
 
 .price__item:hover {
   transform: translateY(-20px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px var(--price-item-hover-border-shadow-color);
 }
 
 .price__item-title {
-  color: rgb(39, 39, 39);
+  color: var(--price-title-color);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -89,7 +89,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(39, 39, 39);
+  color: var(--price-title-descripyion-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -106,7 +106,7 @@
   right: 0;
   bottom: 0;
   height: 1px;
-  background-color: rgb(39, 39, 39);
+  background-color: var(--price-title-descripyion-after-background-color);
 }
 
 .item__price {
@@ -115,7 +115,7 @@
 }
 
 .price__special-description {
-  color: rgb(39, 39, 39);
+  color: var(--price-title-descripyion-color);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -129,7 +129,7 @@
 }
 
 .price__note-text {
-  color: rgb(148, 7, 7);
+  color: var(--price-note-text-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
   line-height: 27.3px;
@@ -168,8 +168,8 @@
 }
 
 #price-list__currency {
-  background-color: rgb(248, 207, 90);
-  color: rgb(5, 40, 27);
+  background-color: var(--price-list-currency-background-color);
+  color: var(--price-list-currency-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
   font-weight: 700;

@@ -65,6 +65,16 @@
   --innovation-advantages-button-color: #272727;
   --innovation-advantages-button-bakcground-color: #f7d05b;
   --innovation-advantages-button-bakcground-hover-color: #e0bb4d;
+  --price-background-color: rgb(245, 245, 245);
+  --price-header-description-color: rgb(39, 39, 39);
+  --price-title-color: rgb(39, 39, 39);
+  --price-item-border-color: rgb(248, 207, 90);
+  --price-item-hover-border-shadow-color: rgba(0, 0, 0, 0.5);
+  --price-title-descripyion-color: rgb(39, 39, 39);
+  --price-title-descripyion-after-background-color: rgb(39, 39, 39);
+  --price-note-text-color: rgb(148, 7, 7);
+  --price-list-currency-background-color: rgb(248, 207, 90);
+  --price-list-currency-color: rgb(5, 40, 27);
 
 
 
