@@ -1,5 +1,5 @@
 .our-teachers {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--our-teachers-background-color);
   background-size: cover;
   height: auto;
   background-position: center;
@@ -32,7 +32,7 @@
 
 .our-teachers__header-title,
 .our-teachers__special {
-  color: rgb(39, 39, 39);
+  color: var(--our-teachers-header-title-color);
   font-family: "Lato", sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -41,12 +41,12 @@
 }
 
 .our-teachers__special {
-  color: rgb(247, 208, 91);
+  color: var(--selected-word-color);
 }
 
 .our-teacher__person {
-  background-color: rgb(255, 255, 255);
-  border: 1.6px solid rgb(248, 207, 90);
+  background-color: var(--our-teacher-person-background-color);
+  border: 1.6px solid var(--our-teacher-person-border-color);
   transition-duration: 0.6s;
   transition-property: all;
   transition-timing-function: ease;
@@ -59,11 +59,11 @@
 
 .our-teacher__person:hover {
   transform: translateY(-20px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 20px var(--our-teacher-person-hover-box-shadow-color);
 }
 
 .our-teacher__name {
-  color: rgb(39, 39, 39);
+  color: var(--our-teacher-name-color);
   font-family: "Lato", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -74,7 +74,7 @@
 }
 
 .our-teacher__position {
-  color: rgb(247, 208, 91);
+  color: var(--our-teacher-position-color);
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -86,7 +86,7 @@
 }
 
 .our-teacher__description {
-  color: rgb(39, 39, 39);
+  color: var(--our-teacher-description-color);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 25.6px;

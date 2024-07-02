@@ -84,6 +84,15 @@
   --consultation-error-message-background-color: white;
   --consultation-error-message-border-color: red;
   --consultation-success-color: green;
+  --our-teachers-background-color: rgb(245, 245, 245);
+  --our-teachers-header-title-color: rgb(39, 39, 39);
+  --our-teacher-person-background-color: rgb(255, 255, 255);
+  --our-teacher-person-border-color: rgb(248, 207, 90);
+  --our-teacher-person-hover-box-shadow-color: rgba(0, 0, 0, 0.5);
+  --our-teacher-name-color: rgb(39, 39, 39);
+  --our-teacher-position-color: rgb(247, 208, 91);
+  --our-teacher-description-color: rgb(39, 39, 39);
+
 
   --footer-background-color: #07281b;
   --footer-content-color: #FFF;
