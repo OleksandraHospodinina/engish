@@ -78,7 +78,7 @@
 
 .promotion__form {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 60% 40% auto;
   gap: 30px;
   max-width: 800px;
   margin: 0 auto;
