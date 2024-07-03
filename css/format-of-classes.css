@@ -32,11 +32,11 @@
 }
 
 .format-container-wrapper {
-  background-color: var(-format-of-classes-container-wraper-background-color);
+  background-color: var(--format-of-classes-container-wraper-background-color);
 }
 
 .format__header {
-  background-color: var(--format-of-classes-format-text-kids-background-color);
+  background-color: var(--format-of-classes-container-wraper-background-color);
   text-align: center;
 }
 
@@ -170,7 +170,7 @@
 }
 .format__container.adults {
   display: none;
-  background-color: var(--format-of-classes-format-text-kids-background-color);
+  background-color: var(--format-of-classes-container-adult-color);
 }
 
 .format__container.kids {
