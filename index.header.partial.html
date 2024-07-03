@@ -9,6 +9,7 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    <style></style>
   </head>
   <body>
     <div class="block">
@@ -35,17 +36,17 @@
       <div class="content">
         <div class="content__box container">
           <img
-            src="img/header/logo.svg"
-            alt="Логотип English sprint"
+            src="/img/header/logo.svg"
+            alt="logo English sprint"
             class="content__logo container__item"
           />
-          <div class="content__links container__item">
-            <a href="index.about-us.partial#about-us" class="content__item">Про нас</a>
-            <a href="index.choice.partial#choice" class="content__item">Про програму</a>
-            <a href="index.price.partial#price" class="content__item">Ціни</a>
-            <a href="index.reviews.partial#review" class="content__item">Відгуки</a>
+          <div class="content__links container__item" data-proofer-ignore>
+            <a href="#about-us" class="content__item">Про нас</a>
+            <a href="#choice" class="content__item">Про програму</a>
+            <a href="#price" class="content__item">Ціни</a>
+            <a href="#review" class="content__item">Відгуки</a>
           </div>
-          <div class="content__call container__item">
+          <div class="content__call container__item" data-proofer-ignore>
             <button
               class="content__button"
               onclick="location.href='#consultation-form'"
@@ -57,16 +58,16 @@
       </div>
       <div class="navbar">
         <a href="index.html" class="navbar__logo-link">
-          <img class="navbar__logo" src="img/header/logo.svg" alt="Логотип" />
+          <img class="navbar__logo" src="img/header/logo.svg" alt="Logo" />
         </a>
         <div class="navbar__burger" onclick="toggleBurgerMenu()">&#9776;</div>
         <div class="navbar__menu">
           <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div>
-          <ul class="navbar__menu-list">
-            <li><a href="index.about-us.partial#about-us">Про нас</a></li>
-            <li><a href="index.choice.partial#choice">Про програму</a></li>
-            <li><a href="index.price.partial#price">Ціни</a></li>
-            <li><a href="index.reviews.partial#review">Відгуки</a></li>
+          <ul class="navbar__menu-list" data-proofer-ignore>
+            <li><a href="#about-us">Про нас</a></li>
+            <li><a href="#choice">Про програму</a></li>
+            <li><a href="#price">Ціни</a></li>
+            <li><a href="#review">Відгуки</a></li>
             <div class="block__language container__item">
               <button class="btn-ua" onclick="setLanguage('ua')">UA</button>
               <button class="btn-eng" onclick="setLanguage('eng')">ENG</button>
@@ -96,7 +97,7 @@
           <p class="english-spirit__paragraph">
             ЗАНЯТТЯ З АНГЛІЙСЬКОЇ ДЛЯ ДОРОСЛИХ ТА ДІТЕЙ
           </p>
-          <div>
+          <div data-proofer-ignore>
             <button
               class="english-spirit__button1"
               onclick="location.href='#consultation-form'"
@@ -112,7 +113,7 @@
           </div>
         </div>
         <div class="english-spirit__logo">
-          <img src="img/header/logo-in-circle.svg" alt="Логотип в круглій рамці" />
+          <img src="img/header/logo-in-circle.svg" alt="logo in circle" />
         </div>
       </div>
     </div>
