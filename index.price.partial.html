@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ціни на уроки</title>
-  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-  <link rel="stylesheet" href="css/price.css">
-</head>
-<body>
-  <section class="price" id="price">
-    <div class="price__header">
-      <div class="price-list__container">
-        <select id="price-list__currency">
-          <option value="UAH">UAH</option>
-          <option value="USD">USD</option>
-        </select>
-        <h2 class="price__title"><span class="price__special">Ціни</span> та формати</h2>
-        <p class="price__header-description">Ціна за один урок.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ціни на уроки</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/price.css" />
+  </head>
+  <body>
+    <section class="price" id="price">
+      <div class="price__header">
+        <div class="price-list__container">
+          <select id="price-list__currency">
+            <option value="UAH">UAH</option>
+            <option value="USD">USD</option>
+          </select>
+          <h2 class="price__title">
+            <span class="price__special">Ціни</span> та формати
+          </h2>
+          <p class="price__header-description">Ціна за один урок.</p>
+        </div>
+        <div class="price__container"></div>
+        <div class="price__note">
+          <p class="price__note-text">
+            *До кожного з пакетів один раз на тиждень безкоштовно Speaking Club
+          </p>
+        </div>
       </div>
-      <div class="price__container">
-      </div>
-      <div class="price__note">
-        <p class="price__note-text">
-          *До кожного з пакетів один раз на тиждень безкоштовно Speaking Club
-        </p>
-      </div>
-    </div>
-  </section>
-  <script src="js/price.js"></script>
-</body>
+    </section>
+    <script src="js/price.js"></script>
+  </body>
 </html>

@@ -46,13 +46,18 @@
             class="content__logo container__item"
           />
           <div class="content__links container__item">
-            <a href="#" class="content__item">About Us</a>
-            <a href="#" class="content__item">Program</a>
-            <a href="#" class="content__item">Prices</a>
-            <a href="#" class="content__item">Reviews</a>
+            <a href="#about-us" class="content__item">About Us</a>
+            <a href="#choice" class="content__item">Program</a>
+            <a href="#price" class="content__item">Prices</a>
+            <a href="#review" class="content__item">Reviews</a>
           </div>
           <div class="content__call container__item">
-            <button class="content__button">Call Me</button>
+            <button
+              class="content__button"
+              onclick="location.href='#consultation-form'"
+            >
+              Call Me
+            </button>
           </div>
         </div>
       </div>
@@ -64,10 +69,10 @@
         <div class="navbar__menu">
           <div class="navbar__close" onclick="closeNavbarMenu()">&times;</div>
           <ul class="navbar__menu-list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Prices</a></li>
-            <li><a href="#">Reviews</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#choice">Program</a></li>
+            <li><a href="#price">Prices</a></li>
+            <li><a href="#review">Reviews</a></li>
             <div class="block__language container__item">
               <button class="btn-ua" onclick="setLanguage('ua')">UA</button>
               <button class="btn-eng" onclick="setLanguage('eng')">ENG</button>
@@ -98,8 +103,16 @@
             English Classes for Adults and Children
           </p>
           <div>
-            <button class="english-spirit__button1">Get Consultation</button>
-            <button class="english-spirit__button2">
+            <button
+              class="english-spirit__button1"
+              onclick="location.href='#consultation-form'"
+            >
+              Get Consultation
+            </button>
+            <button
+              class="english-spirit__button2"
+              onclick="location.href='#trial-lesson'"
+            >
               Sign Up for a Trial Lesson
             </button>
           </div>
