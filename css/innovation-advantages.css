@@ -27,18 +27,31 @@
   }
 
   .innovation-advantages-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
     
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   .innovation-advantages-background {
     height: auto;
   }
+
+  .innovation-advantages-main-text {
+    font-size: 30px;
+  }
   .innovation-advantages-container {
     grid-template-columns: repeat(1, 1fr);
-    
+  }
+
+  .innovation-advantages-item {
+    justify-content: center;
+  }
+
+  .innovation-advantages-button {
+    width: 250px;
   }
 }
 

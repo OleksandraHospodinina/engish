@@ -1,6 +1,7 @@
 .trial-lesson__background {
   background: url(../img/about-us/background.png);
-  padding: 50px 10px;
+  padding: 50px 0;
+  max-width: 100%;
 }
 
 .trial-lesson__container {
@@ -49,13 +50,7 @@ li img {
   border-radius: 50%;
 }
 
-.trial-lesson__form-container {
-  background-color: var(--trial-lesson-form-container-background-color);
-  flex-basis: 48%;
-  padding: 20px 20px;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
+
 
 .trial-lesson__form-title {
   font-family: "Lato", sans-serif;
@@ -109,12 +104,21 @@ li img {
   }
 }
 
-@media (max-width:400px) {
-  .trial-lesson__form-container{
-    justify-content: left;
-    width: 65%;
+@media (max-width: 400px) {
+  .trial-lesson__form-container {
+    flex-basis: 80%;
     margin: 0 auto;
+    max-width: 100%; 
+    margin-right: 10px;
   }
+}
+
+.trial-lesson__form-container {
+  background-color: var(--trial-lesson-form-container-background-color);
+  flex-basis: 100%; 
+  padding: 20px; 
+  border-radius: 8px;
+  box-sizing: border-box; 
 }
 
 .trial__error-message {
