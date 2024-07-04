@@ -75,4 +75,10 @@
     position: static;
     height: auto;
   }
+  .about-us__title {
+    padding: 0 20px;;
+  }
+  .about-us__description-part {
+    padding: 0 20px;
+  }
 }
