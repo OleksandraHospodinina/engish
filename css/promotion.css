@@ -1,3 +1,6 @@
+.promotion__background {
+  padding: 20px;
+}
 .promotion__description {
   display: grid;
   gap: 20px;
@@ -42,6 +45,26 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotion__description {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .promotion__description-text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+  .promotion__paragraph {
+    text-align: center;
+    padding: 20px;
+  }
   }
 }
 
