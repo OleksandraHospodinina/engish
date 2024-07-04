@@ -8,6 +8,12 @@ function init() {
   import("./promotion-sale.js");
   import("./language.js");
   import("./header-burger-menu.js");
+  import("./review-read-more.js");
+  import("./consultation-form-eng.js");
+  import("./price-eng.js");
+  import("./promotion-eng.js");
+  import("./promotion-sale-eng.js");
+  
 }
 
 const totalPartials = document.querySelectorAll(

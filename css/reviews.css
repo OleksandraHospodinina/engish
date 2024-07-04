@@ -95,3 +95,14 @@
 .reviews__indicator--active {
   background-color: var(--reviews-indicator-active-color);
 }
+
+#more {
+  font-family: "Lato", sans-serif;
+  color: #07281b;
+  font-size: 15;
+  font-weight: 700;
+}
+#more-text {
+  display: none;
+  color: #07281b;
+}
