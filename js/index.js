@@ -13,7 +13,7 @@ function init() {
   import("./price-eng.js");
   import("./promotion-eng.js");
   import("./promotion-sale-eng.js");
-  
+  import("./review-read-more-eng.js")
 }
 
 const totalPartials = document.querySelectorAll(
