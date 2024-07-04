@@ -44,6 +44,45 @@
   background: url(../img/about-us/background.png) center/cover no-repeat fixed;
 }
 
+@media (max-width: 768px){
+  .english-spirit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    .english-spirit__title {
+      font-size: 60px;
+      text-align: center;
+    }
+
+    .english-spirit__paragraph{
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .english-spirit__button1 {
+      align-items: center;
+      text-align: center;
+      width: 220px;
+      padding: 20px auto;
+      margin: auto;
+    }
+    .english-spirit__button2 {
+      align-items: center;
+      text-align: center;
+      width: 220px;
+      padding: auto;
+      margin: 20px auto;
+    }
+
+    .english-spirit__logo {
+      align-items: center;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
 .english-spirit__box {
   display: grid;
   grid-template-columns: 1fr 1fr;
