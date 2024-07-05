@@ -8,6 +8,7 @@
 
 :root {
   scroll-behavior: smooth;
+  --index: calc(1vw + 1vh);
   --selected-word-color: #f7d05b;
   --header-block-color: #f7d05b;
   --header-fa-brands-color: #f7d05b;

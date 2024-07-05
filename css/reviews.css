@@ -123,4 +123,6 @@
 .reviews__slides {
   display: flex;
   overflow: hidden;
+  gap: 20px;
+  font-size: calc(var(--index)* 0.7);
 }
