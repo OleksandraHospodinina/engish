@@ -1,117 +1,25 @@
-const reviews = [
-  {
-    image: "img/reviews/andrii.png",
-    name: "Андрій",
-    text: "Викладачі в школі English Spirit дуже професійні та кваліфіковані. Вони створюють приємну та дружню атмосферу, що дає змогу студентам почуватися впевнено та комфортно в процесі навчання.",
-    moreText:
-      "Кожен урок був добре спланований і структурований, що допомагало мені ефективно засвоювати новий матеріал. Школа пропонує різноманітні програми навчання англійської мови, які дають змогу студентам обрати курс, що найбільше підходить для них, відповідно до їхніх цілей і рівня мови. Крім того, навчальні матеріали, що використовуються в школі, завжди актуальні та цікаві. Я хочу зазначити, що після закінчення курсу мій рівень англійської мови значно підвищився. Я можу вільно спілкуватися англійською мовою і легко розуміти мову носіїв мови.",
-  },
-  {
-    image: "img/reviews/vladyslav.png",
-    name: "Владислав",
-    text: `Я був студентом школи англійської мови в English Spirit протягом декількох місяців, і можу з упевненістю сказати, що це був незабутній і дуже корисний для мене час. Викладачі в школі English Spirit були дуже доброзичливими та змушували мене почуватися комфортно на уроках.`,
-    moreText: `Вони використовували різні методи навчання, щоб зробити уроки цікавими та захопливими, що допомагало мені краще розуміти англійську мову та впевнено говорити нею. Я особливо любив, як навчальні матеріали в школі були структуровані. Вони були легко доступні та містили багато практичних вправ, які допомагали мені засвоїти матеріал і закріпити нові знання. Крім того, я оцінив можливість спілкуватися з іншими студентами англійською мовою. Це було дуже корисним для мене, оскільки я міг практикувати свою англійську в неформальній обстановці і вчитися говорити нею більш вільно. У підсумку, завдяки школі English Spirit, я значно поліпшив свою англійську мову і почуваюся впевнено у використанні її в повсякденному житті.`,
-  },
-  {
-    image: "img/reviews/valeria.png",
-    name: "Валерія",
-    text: `Я подорожую світом протягом кількох років і завжди мріяла вивчити англійську мову щоб комунікація не ставала перешкодою для мене. Коли я відвідала школу English Spirit, я зрозуміла, що це було найкраще рішення, яке я могла зробити. Я була дуже вражена якістю навчання та професіоналізмом викладачів у школі.`,
-    moreText: `Вони були досвідченими та турботливими, завжди готові допомогти мені. Мені подобалося, як вони структурували свої уроки, включно з комбінацією різних методик навчання, таких як перегляд шоу і прослуховування подкастів, говоріння на абсолютно всі цікаві для мене теми і навчання спілкуванню через смс. Це допомагало мені краще розуміти мову та швидше засвоювати новий матеріал.`,
-  },
-  {
-    image: "img/reviews/oleh.png",
-    name: "Олег",
-    text: `Я дуже задоволений своїм досвідом навчання в школі English Spirit. Я працюю у сфері ІT і мені завжди було необхідно мати гарне знання англійської мови для комунікації з міжнародними колегами та клієнтами. Школа English Spirit надала мені можливість вивчати англійську мову на високому рівні, а також покращити мої професійні навички.`,
-    moreText: `Викладачі школи були професіоналами у своїй галузі та створювали цікаві та захоплюючі уроки. Вони використовували сучасні методики навчання, щоб допомогти мені краще розуміти граматику і правила англійської мови. Крім того, вони також надавали мені безліч можливостей для практики розмовної мови, що було дуже важливо для моєї роботи.`,
-  },
-  {
-    image: "img/reviews/nikita.png",
-    name: "Нікіта",
-    text: `Я дуже радий, що мої батьки записали мене в школу English Spirit для підготовки до ЗНО з англійської мови. Завдяки професіоналізму викладачів та індивідуальному підходу до кожного учня, я зміг успішно скласти ЗНО на 194 бали. Уроки в школі були цікавими та захоплюючими.`,
-    moreText: `Викладачі використовували різні методики навчання, щоб допомогти мені краще розуміти граматику і правила англійської мови. Вони також надавали мені безліч можливостей для практики розмовної мови, що було дуже важливо для успішного складання іспиту. Особливо мені сподобалося, що викладачі в школі не тільки фокусувалися на теорії, а й на практичному застосуванні знань. Вони навчили мене використовувати мову в реальному житті, не тільки на іспиті. Завдяки цьому, я зміг краще розуміти англійську мову і використовувати її в повсякденному житті.`,
-  },
-];
+let splide;
 
-let currentIdx = 0;
+function initSplide() {
+  const isMobile = window.innerWidth <= 768;
 
-function renderReviews() {
-  const slidesContainer = document.querySelector(".reviews__slides");
-  slidesContainer.innerHTML = reviews
-    .map(
-      (review, idx) => `
-      <div class="reviews__slide ${
-        isActive(idx) ? "reviews__slide--active" : ""
-      }">
-          <div class="background-wrapper">
-              <div class="background" style="background: rgb(245, 245, 245)">
-                  <img src="${review.image}" alt="Фото користувача ${
-        review.name
-      }" class="reviews__photo" />
-                  <p class="reviews__name">${review.name}</p>
-                  <p>
-                      ${review.text}
-                      <span class="more" onclick="toggleReadMore(${idx})">Читати більше...</span>
-                      <span class="more-text" id="more-text-${idx}" style="display: none;">${
-        review.moreText
-      }</span>
-                  </p>
-              </div>
-          </div>
-      </div>
-  `
-    )
-    .join("");
-  updateIndicators();
-}
+  if (splide) {
+    splide.destroy();
+  }
 
-function isActive(idx) {
-  return idx === currentIdx || idx === (currentIdx + 1) % reviews.length;
-}
+  const perPage = isMobile ? 1 : 2;
 
-function updateSlide() {
-  const slides = document.querySelectorAll(".reviews__slide");
-  slides.forEach((slide, idx) => {
-    slide.classList.remove("reviews__slide--active");
-    if (isActive(idx)) {
-      slide.classList.add("reviews__slide--active");
-    }
+  splide = new Splide(".splide", {
+    type: 'loop',
+    perPage: perPage,
+    gap: '20px'
   });
-  updateIndicators();
+
+  splide.mount();
 }
 
-function moveSlide(step) {
-  currentIdx = (currentIdx + step + reviews.length) % reviews.length;
-  updateSlide();
-}
+initSplide();
 
-function moveToSlide(index) {
-  currentIdx = index;
-  updateSlide();
-}
-
-function toggleReadMore(idx) {
-  const moreText = document.getElementById(`more-text-${idx}`);
-  moreText.style.display =
-    moreText.style.display === "none" || moreText.style.display === ""
-      ? "block"
-      : "none";
-  const button = document.querySelector(`.reviews__slide--active .more`);
-  button.textContent =
-    moreText.style.display === "block" ? "Читати менше..." : "Читати більше...";
-}
-
-function updateIndicators() {
-  const indicatorsContainer = document.querySelector(".reviews__indicators");
-  indicatorsContainer.innerHTML = reviews
-    .map(
-      (review, idx) => `
-      <div class="reviews__indicator ${
-        isActive(idx) ? "reviews__indicator--active" : ""
-      }" onclick="moveToSlide(${idx})"></div>
-  `
-    )
-    .join("");
-}
-
-renderReviews();
-updateSlide();
+window.addEventListener('resize', () => {
+  initSplide();
+});

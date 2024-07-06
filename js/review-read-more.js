@@ -4,12 +4,15 @@ moreButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const moreText = button.parentElement.nextElementSibling;
 
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-      moreText.style.display = "block";
-      button.textContent = "Згорнути";
-    } else {
-      moreText.style.display = "none";
-      button.textContent = "Читати більше...";
+    if (moreText) {
+      const computedStyle = window.getComputedStyle(moreText);
+      if (computedStyle.display === "none" || moreText.hidden) {
+        moreText.hidden = false; // або встановлення класу CSS для видимості
+        button.textContent = "Згорнути";
+      } else {
+        moreText.hidden = true; // або встановлення класу CSS для приховання
+        button.textContent = "Читати більше...";
+      }
     }
   });
 });

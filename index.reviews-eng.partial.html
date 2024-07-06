@@ -3,28 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="
+      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
     <link rel="stylesheet" href="css/reviews.css" />
   </head>
   <body>
-    <section class="reviews__section" id="review">
-      <h2 class="reviews__title">REVIEWS</h2>
-      <div class="reviews__carousel">
-        <button
-          class="reviews__button reviews__button--prev"
-          onclick="moveSlide(-1)"
-        >
-          ‹
-        </button>
-        <div class="reviews__slides"></div>
-        <button
-          class="reviews__button reviews__button--next"
-          onclick="moveSlide(1)"
-        >
-          ›
-        </button>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <div>
+          <p class="splide__text">REWIEWS</p>
+        </div>
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="img/reviews/andrii.png" alt="andrii review">
+            <p class="splide__paragraph">
+              Teachers at English Spirit school are very professional and qualified. 
+              They create a pleasant and friendly atmosphere, which allows students 
+              to feel confident and comfortable during their studies. Each lesson was 
+              well-planned and structured, which helped me effectively absorb new material.
+            </p>
+            <p class="splide__paragraph">
+              The school offers a variety of English language learning programs that allow 
+              students to choose a course that best suits their goals and language level. 
+              Additionally, the teaching materials used at the school are always current and 
+              interesting. I want to note that after completing the course, my English 
+              language skills significantly improved. I can now communicate in English freely
+              and easily understand native speakers.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img src="img/reviews/vladyslav.png" alt="vladyslav review">
+            <p class="splide__paragraph">
+              I was a student at English Spirit school for several months, and I can confidently 
+              say it was an unforgettable and very beneficial time for me. Teachers at English 
+              Spirit were very friendly and made me feel comfortable in class.
+            </p>
+            <p class="splide__paragraph">
+              They used various teaching methods to make lessons interesting and engaging, which 
+              helped me better understand and speak English confidently. I especially liked how 
+              the teaching materials at the school were structured. They were easily accessible 
+              and included many practical exercises that helped me absorb material and reinforce 
+              ew knowledge. Furthermore, I appreciated the opportunity to communicate with other 
+              students in English. It was very beneficial for me as I could practice my English 
+              in an informal setting and learn to speak more freely. In conclusion, thanks to 
+              English Spirit school, I have significantly improved my English language skills and 
+              feel confident using it in everyday life.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img src="img/reviews/valeria.png" alt="valeria review">
+            <p class="splide__paragraph">
+              I have been traveling around the world for several years and always dreamed of 
+              learning English so that communication would not be a barrier for me. When I visited 
+              English Spirit school, I realized it was the best decision I could make.
+            </p>
+            <p class="splide__paragraph">
+              I was very impressed with the quality of teaching and the professionalism of the 
+              teachers at the school. They were experienced and caring, always ready to help me. I 
+              liked how they structured their lessons, including a combination of different teaching 
+              methods such as watching shows, listening to podcasts, discussing absolutely all the 
+              interesting topics for me, and learning to communicate through SMS. This helped me 
+              better understand the language and quickly absorb new material.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img src="img/reviews/oleh.png" alt="oleh review">
+            <p class="splide__paragraph">
+              I am very satisfied with my learning experience at English Spirit school. I work in the 
+              IT field, and it has always been necessary for me to have good English language skills 
+              to communicate with international colleagues and clients.
+            </p>
+            <p class="splide__paragraph">
+              English Spirit school provided me with the opportunity to study English at a high level 
+              and improve my professional skills. School teachers were professionals in their field and 
+              created interesting and exciting lessons. They used modern teaching methodologies to help 
+              me better understand grammar and English language rules. Moreover, they also provided me 
+              with numerous opportunities to practice spoken language, which was very important for 
+              my work.
+            </p>
+          </li>
+          <li class="splide__slide">
+            <img src="img/reviews/nikita.png" alt="nikita review">
+            <p class="splide__paragraph">
+              I am very happy that my parents enrolled me in English Spirit school to prepare for the 
+              English language SAT. Thanks to the professionalism of the teachers and the individual 
+              approach to each student, I was able to successfully pass the SAT with a score of 194.
+            </p>
+            <p class="splide__paragraph">
+              The lessons at the school were interesting and exciting. Teachers used various teaching
+               methods to help me better understand grammar and English language rules. They also 
+               provided me with numerous opportunities to practice spoken language, which was crucial 
+               for successfully passing the exam. I especially liked that teachers at the school 
+               focused not only on theory but also on the practical application of knowledge. They 
+               taught me to use the language in real life, not just on the exam. Thanks to this, I was 
+               able to better understand English and use it in everyday life.
+            </p>
+          </li>
+        </ul>
       </div>
-      <div class="reviews__indicators"></div>
     </section>
-    <script src="js/reviews-eng.js"></script>
+    <script src="
+      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js">
+    </script>
+    <script src="js/reviews.js"></script>
   </body>
 </html>
